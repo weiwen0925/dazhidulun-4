@@ -227,31 +227,43 @@ a{color:inherit;text-decoration:none;}
 .sb-ext .sb-label{font-size:10.5px;opacity:.78;}
 .sb-ext:hover .sb-label{color:var(--goldL);opacity:1;}
 
-/* === 本品影音浮動鈕 === */
+/* === 本品影音浮動鈕（暗金色設計版）=== */
 .yt-float{
- position:fixed;right:24px;bottom:84px;z-index:115;
- display:inline-flex;align-items:center;gap:11px;
- padding:11px 20px 11px 13px;
- background:linear-gradient(135deg,#FF0000 0%,#cc0000 100%);color:#fff;
- border-radius:32px;text-decoration:none;
+ position:fixed;right:22px;bottom:80px;z-index:115;
+ display:inline-flex;align-items:center;gap:9px;
+ padding:7px 16px 7px 9px;
+ background:linear-gradient(135deg,#2a2218 0%,#3d3225 50%,#2a2218 100%);
+ color:var(--goldL,#d4a84b);
+ border:1px solid rgba(184,134,11,.55);
+ border-radius:28px;text-decoration:none;
  font-family:"Noto Sans TC",sans-serif;
- box-shadow:0 4px 18px rgba(0,0,0,.28);
- opacity:0;transform:translateY(12px);pointer-events:none;
- transition:opacity .35s ease,transform .35s ease,box-shadow .25s ease;
+ box-shadow:0 3px 12px rgba(0,0,0,.32);
+ opacity:0;transform:translateY(10px);pointer-events:none;
+ transition:opacity .35s ease,transform .35s ease,box-shadow .25s,border-color .25s;
+ backdrop-filter:saturate(1.2);
 }
 .yt-float.show{opacity:1;transform:translateY(0);pointer-events:auto;}
-.yt-float:hover{box-shadow:0 8px 24px rgba(255,0,0,.45);transform:translateY(-2px);}
-.yt-icon{width:26px;height:26px;border-radius:50%;background:#fff;color:#FF0000;
+.yt-float:hover{
+ border-color:var(--gold,#b8860b);
+ box-shadow:0 6px 18px rgba(184,134,11,.32);
+ transform:translateY(-2px);
+}
+.yt-icon{width:22px;height:22px;border-radius:50%;
+ background:rgba(184,134,11,.16);color:var(--goldL,#d4a84b);
+ border:1px solid var(--gold,#b8860b);
  display:flex;align-items:center;justify-content:center;flex-shrink:0;
- font-size:13px;padding-left:2px;line-height:1;}
+ font-size:9px;padding-left:1px;line-height:1;
+ transition:background .25s,color .25s;}
+.yt-float:hover .yt-icon{background:var(--gold,#b8860b);color:#fff;}
 .yt-body{display:flex;flex-direction:column;align-items:flex-start;line-height:1.2;min-width:0;}
-.yt-main{font-size:14px;font-weight:700;letter-spacing:3px;white-space:nowrap;}
-.yt-sub{font-size:11px;opacity:.92;letter-spacing:1px;margin-top:3px;white-space:nowrap;
- max-width:240px;overflow:hidden;text-overflow:ellipsis;}
+.yt-main{font-size:12.5px;font-weight:600;letter-spacing:2.5px;color:var(--goldL,#d4a84b);white-space:nowrap;}
+.yt-sub{font-size:10px;opacity:.68;letter-spacing:.5px;margin-top:2px;color:#c4a76c;white-space:nowrap;
+ max-width:200px;overflow:hidden;text-overflow:ellipsis;}
+.yt-float:hover .yt-sub{opacity:.92;}
 @media(max-width:600px){
- .yt-float{right:14px;bottom:74px;padding:9px 16px 9px 11px;border-radius:28px;}
- .yt-icon{width:22px;height:22px;font-size:11px;}
- .yt-main{font-size:13px;letter-spacing:2px;}
+ .yt-float{right:12px;bottom:70px;padding:6px 14px 6px 8px;}
+ .yt-icon{width:20px;height:20px;font-size:8px;}
+ .yt-main{font-size:11.5px;letter-spacing:1.8px;}
  .yt-sub{display:none;}
 }
 @media print{.yt-float{display:none!important;}}
