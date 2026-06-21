@@ -226,6 +226,35 @@ a{color:inherit;text-decoration:none;}
  box-shadow:0 0 10px rgba(184,134,11,.5);}
 .sb-ext .sb-label{font-size:10.5px;opacity:.78;}
 .sb-ext:hover .sb-label{color:var(--goldL);opacity:1;}
+
+/* === 本品影音浮動鈕 === */
+.yt-float{
+ position:fixed;right:24px;bottom:84px;z-index:115;
+ display:inline-flex;align-items:center;gap:11px;
+ padding:11px 20px 11px 13px;
+ background:linear-gradient(135deg,#FF0000 0%,#cc0000 100%);color:#fff;
+ border-radius:32px;text-decoration:none;
+ font-family:"Noto Sans TC",sans-serif;
+ box-shadow:0 4px 18px rgba(0,0,0,.28);
+ opacity:0;transform:translateY(12px);pointer-events:none;
+ transition:opacity .35s ease,transform .35s ease,box-shadow .25s ease;
+}
+.yt-float.show{opacity:1;transform:translateY(0);pointer-events:auto;}
+.yt-float:hover{box-shadow:0 8px 24px rgba(255,0,0,.45);transform:translateY(-2px);}
+.yt-icon{width:26px;height:26px;border-radius:50%;background:#fff;color:#FF0000;
+ display:flex;align-items:center;justify-content:center;flex-shrink:0;
+ font-size:13px;padding-left:2px;line-height:1;}
+.yt-body{display:flex;flex-direction:column;align-items:flex-start;line-height:1.2;min-width:0;}
+.yt-main{font-size:14px;font-weight:700;letter-spacing:3px;white-space:nowrap;}
+.yt-sub{font-size:11px;opacity:.92;letter-spacing:1px;margin-top:3px;white-space:nowrap;
+ max-width:240px;overflow:hidden;text-overflow:ellipsis;}
+@media(max-width:600px){
+ .yt-float{right:14px;bottom:74px;padding:9px 16px 9px 11px;border-radius:28px;}
+ .yt-icon{width:22px;height:22px;font-size:11px;}
+ .yt-main{font-size:13px;letter-spacing:2px;}
+ .yt-sub{display:none;}
+}
+@media print{.yt-float{display:none!important;}}
 </style>
 <meta name="wy-full-protection" content="v2-silent">
 <meta name="robots" content="index,follow,noai,noimageai">
@@ -590,6 +619,13 @@ a{color:inherit;text-decoration:none;}
 </footer>
 <div data-wy-notice="v2" data-wytext="Sx1EEkEJHBAIEFFXA0xMAAFYEw1FXlZMWBkcTgEUHEpdQ0wBVxhYEA5BSleC6cCT+KrTr8zU9/LJ3tudyP2M2+yQ07TSuMLey/XLycCS1+eMyOWS95HTmObWwNrC2PqS1eCD7NCdxabQkuvW4uDE5MKd3fmM/euR07HcrfPY18LE5fJGCUkMBwkTUw9cWQJBBEMCSxYNH0cdGhkBG09RAxVeGlZtJwkfBg4TEAUCC0MbXRlCAwoPRBMfBFRGGwMaHkhaSAQTVwpZHQ0fVUsHGgAaHBcXSUJQT01PXxUfEB1JEQkWAV9VWR9eGUNDCw8fUwsLBwgQHABWQgJFGBQXVRECSA0LARgQCg0XT04JQUlPXwwbGg4NG1ZFThlEVU0TVw1MFgYfHFRGKg4ZD0NfD0hIGAxZEQMfRgoLGEM1LUVRQxFGEhBaAQ9GRwhaluz3Uk9GAkgNBAlMCkEJHBAIEFFXCkRHXRpQDkNECg0TBgxJFwAaDUYPQBdDEBBDSRUVGFNcBRRODUJYQgQLVEBPXAJMDlIIEBgBC18ZXgZQFBBDA1tIGBFfV1Kcz7XQltPX2t3I7v6f1t6LyeCT94PRovzX4cXJ3OGf4O6LyfdJDF8bE5C55p6A7Yny7474y4vh8cKIoZGr8Zyo1Yfy+I3Z7oX0/c60r0oeBAlMCl9GRw0NA1I=" style="margin:0;padding:32px 22px;background:#1e1a14;border-top:2px solid #b8860b;text-align:center;font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;font-size:13.5px;line-height:1.95;color:#c4a76c;letter-spacing:1px;"></div>
 </main>
+<a aria-label="本品影音說明" class="yt-float" href="#" id="ytFloat" rel="noopener" target="_blank">
+<span aria-hidden="true" class="yt-icon">▶</span>
+<span class="yt-body">
+<span class="yt-main" id="ytFloatMain"></span>
+<span class="yt-sub" id="ytFloatSub"></span>
+</span>
+</a>
 <button aria-label="回到頂部" id="backTop">↑</button>
 <script>
 (function(){
@@ -792,6 +828,61 @@ a{color:inherit;text-decoration:none;}
    }
   }catch(e){}
  };
+
+ // === 本品影音浮動鈕 ===
+ var YT_DATA=[
+  null,
+  {id:'_FYdWfZECSU',name:'經典序分中的排版密碼'},
+  {id:'2KbMgvPhdJU',name:'經卷開篇的底層邏輯'},
+  {id:'sXYXARrXdqM',name:'金剛大心 · 論菩提薩埵之義'},
+  {id:'gQrKFNbkHmQ',name:'菩薩道的時間、心法與緣起'},
+  {id:'5DME7RbmDg4',name:'釋迦與彌勒的修證辯悟'},
+  {id:'kogtK8zRRvM',name:'六度波羅蜜圓滿因緣'},
+  {id:'4Wx2uXdsqek',name:'兜率中道 · 受生處之義助'},
+  {id:'hoShk8PwUnE',name:'大乘菩薩降生與入胎邏輯'},
+  {id:'Z3ilp4RLZdM',name:'三十二大人相'},
+  {id:'tFq0YmfpwjU',name:'三十二相 · 四門中觀解構'},
+  {id:'mRdmh9f9ZJg',name:'覺者之境 · 佛道與菩薩'},
+  {id:'fpKqVT-0mLU',name:'菩薩論議 · 降維打擊'},
+  {id:'j2GcvJITtBg',name:'辯三十二相種業因緣'},
+  {id:'u2x_4WnBeuk',name:'中觀邏輯解構 · 破執七關'},
+  {id:'UPOOg6lxlFY',name:'中觀邏輯的解構與重建'},
+ ];
+ var CN_NUMS=['','一','二','三','四','五','六','七','八','九','十','十一','十二','十三','十四','十五'];
+ var ytFloat=document.getElementById('ytFloat');
+ var ytMain=document.getElementById('ytFloatMain');
+ var ytSub=document.getElementById('ytFloatSub');
+ var lastYtN=-1;
+ function updateYTFloat(){
+  if(!ytFloat) return;
+  var chs=document.querySelectorAll('.chapter');
+  if(!chs.length){ ytFloat.classList.remove('show'); return; }
+  var threshold=window.innerHeight*0.4;
+  var idx=-1;
+  for(var i=0;i<chs.length;i++){
+   if(chs[i].getBoundingClientRect().top<threshold) idx=i;
+  }
+  if(idx<0){ ytFloat.classList.remove('show'); return; }
+  var n=idx+1;
+  if(n===lastYtN){ ytFloat.classList.add('show'); return; }
+  lastYtN=n;
+  var d=YT_DATA[n]; if(!d) return;
+  ytFloat.href='https://youtu.be/'+d.id;
+  ytFloat.title='第'+CN_NUMS[n]+'品 · '+d.name+' · YouTube 影音說明';
+  if(ytMain) ytMain.textContent='本品影音';
+  if(ytSub)  ytSub.textContent ='第'+CN_NUMS[n]+'品 · '+d.name;
+  ytFloat.classList.add('show');
+ }
+ window.addEventListener('scroll',updateYTFloat,{passive:true});
+ window.addEventListener('resize',updateYTFloat);
+ updateYTFloat();
+ // resize 輪詢時也順手刷一次
+ (function(){
+  var orig=window.resizeAllFrames;
+  if(typeof orig==='function'){
+   window.resizeAllFrames=function(){orig.apply(this,arguments); updateYTFloat();};
+  }
+ })();
 </script>
 
 <script id="wy-print-intercept">
