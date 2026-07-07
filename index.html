@@ -1008,4 +1008,976 @@ a{color:inherit;text-decoration:none;}
   });
 })();
 </script>
+<!--WY-C4P1:BEGIN-->
+<style id="wy-c4p1-css">
+.c4p1-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p1-fabbox.show{display:block;}
+.c4p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p1-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p1-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p1-modal.open{display:flex;}
+.c4p1-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p1-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p1-close:hover{background:#e3d5b8;}
+.c4p1-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p1-tbl th,.c4p1-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p1-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p1-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p1-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p1-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p1-fabbox{right:14px;}.c4p1-tbl{font-size:11.5px;}.c4p1-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p1-fabbox" id="c4p1Box"><button class="c4p1-btn" id="c4p1Btn" type="button" aria-label="開啟全景總表"><span class="c4p1-ic">&#9638;</span><span class="c4p1-ls"><span class="c4p1-l1">本品 &middot; 經典序分中的排版密碼</span><span class="c4p1-l2">排序之謎與別說之謎・二諦八不中道・內秘菩薩行外現聲聞相</span></span></button></div><div class="c4p1-modal" id="c4p1Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p1-card"><button class="c4p1-close" id="c4p1Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第一品 經典序分中的排版密碼 · 全景總表</h3><p class="sub">卷四・第1品｜全六章｜依原典通讀整理</p><table class="c4p1-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>經典序分中的排版密碼</td><td>不合常理的開卷語 · 解構龍樹菩薩的兩個大哉問。本章要解決的是一個「你以為理所當然，細看卻完全不合常理」的排版現象。龍樹菩薩在《大智度論》卷四開篇便直指要害：大乘經典序分中，聽法大眾的出場順序不符境界高低，菩薩竟被排在最後…</td><td>不合常理的開卷語、解構龍樹菩薩的兩個大哉問</td></tr><tr><td>第二章</td><td>大智度論卷四原典</td><td>初品中菩薩釋論第八 · 龍樹菩薩造 · 鳩摩羅什譯。本章收錄的是《大智度論》卷四〈釋初品中菩薩〉的完整問答段落。龍樹菩薩在此設計了五輪層層遞進的問答：前三輪聚焦「排序之謎」（Why Last?）…</td><td>排序之謎、別說之謎、集合關係、本體邏輯</td></tr><tr><td>第三章</td><td>排序之謎 · 為何菩薩殿後？</td><td>從法理、秩序到度眾策略的三層前邏輯剖析。菩薩「殿後」，乍看是境界被貶抑，其實是一場精心設計的公共關係策略。龍樹菩薩在卷四第一輪與第二輪問答中…</td><td>殿後、現示、祕密、同流</td></tr><tr><td>第四章</td><td>別說之謎 · 為何菩薩被單獨列出？</td><td>探索四眾與菩薩在發心與境界上的本質分水嶺。如果菩薩已經「總在四眾中」（出家菩薩歸比丘、在家菩薩歸優婆塞），為何還要單獨拉出一句「復有菩薩摩訶薩」？</td><td>總在四眾中、復有菩薩摩訶薩、探索四眾與菩薩在發心與境界上的本質分水嶺</td></tr><tr><td>第五章</td><td>中觀統攝 · 二諦、雙空與八不中道</td><td>核心解碼 · 用《中論》視角統攝前後邏輯。龍樹菩薩同時是《大智度論》與《中論》的作者，這絕非巧合。本章要做的，是把排版順序這個看似世俗的問題，昇華為宇宙實相的辯證。</td><td>半空、全空、不常不斷、得法身而不斷</td></tr><tr><td>第六章</td><td>內秘菩薩行，外現聲聞相</td><td>大乘菩薩的矛盾與統一 · 龍樹思維矩陣全景圖。走過序分密碼、原典問答、前邏輯剖析與後邏輯中觀統攝，本章要做最後一件事——把所有線索收攏為一張 龍樹菩薩思維矩陣全景圖 ，並淬鍊出一句十字心法：「內秘菩薩行，外現聲聞相」。</td><td>內秘菩薩行，外現聲聞相、大乘菩薩的矛盾與統一、龍樹思維矩陣全景圖</td></tr></tbody></table><p class="c4p1-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p1Btn"),BOX=document.getElementById("c4p1Box"),MODAL=document.getElementById("c4p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P1:END-->
+
+<!--WY-C4P2:BEGIN-->
+<style id="wy-c4p2-css">
+.c4p2-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p2-fabbox.show{display:block;}
+.c4p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p2-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p2-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p2-modal.open{display:flex;}
+.c4p2-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p2-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p2-close:hover{background:#e3d5b8;}
+.c4p2-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p2-tbl th,.c4p2-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p2-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p2-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p2-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p2-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p2-fabbox{right:14px;}.c4p2-tbl{font-size:11.5px;}.c4p2-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p2-fabbox" id="c4p2Box"><button class="c4p2-btn" id="c4p2Btn" type="button" aria-label="開啟全景總表"><span class="c4p2-ic">&#9638;</span><span class="c4p2-ls"><span class="c4p2-l1">本品 &middot; 經卷開篇的底層邏輯</span><span class="c4p2-l2">恒河大海牛跡水・悲智雙運大乘戰車・空故能容全息投影</span></span></button></div><div class="c4p2-modal" id="c4p2Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p2-card"><button class="c4p2-close" id="c4p2Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第二品 經卷開篇的底層邏輯 · 全景總表</h3><p class="sub">卷四・第2品｜全六章｜依原典通讀整理</p><table class="c4p2-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>序論：經首並列的文獻現象與核心問題</td><td>從一個文獻小問題，潛入大乘哲學的核心。本章說明第二品所要處理的核心問題：聲聞經典開篇僅列比丘眾，大乘經典開篇卻必列聲聞、菩薩兩眾。</td><td>表層—引擎—底層、從一個文獻小問題，潛入大乘哲學的核心</td></tr><tr><td>第二章</td><td>第一維度：動機與格局的全面對比</td><td>格局之辨與見地之辨——兩乘的兩組根本差異。承上一章論主之問，本章解讀論主的第一段答語。答語包含兩組判別：格局與動機之辨（陿小／廣大、自利／益一切），以及見地深淺之辨（眾生空／法空）。</td><td>格局之辨與見地之辨——兩乘的兩組根本差異</td></tr><tr><td>第三章</td><td>包容法則：大能容小與空間容量譬喻</td><td>恒河、大海與牛跡水——為何大乘經初不獨說菩薩眾。上一章確立佛乘格局廣大。本章處理一個反向疑問：既然佛乘高遠，大乘經初何不獨列菩薩眾？</td><td>廣大、恒河、大海與牛跡水——為何大乘經初不獨說菩薩眾</td></tr><tr><td>第四章</td><td>第二維度：悲智雙運的動力引擎</td><td>讚摩訶衍偈、大乘戰車與不入二法的駕駛心法。前三章說明大乘格局廣大、能容一切。本章進入第二維度，說明撐起此格局的動力系統：以「讚摩訶衍偈」展現六度的絕對奉獻，再解構「大乘戰車」的零件配置…</td><td>讚摩訶衍偈、大乘戰車、不入二法</td></tr><tr><td>第五章</td><td>第三維度：中觀底層邏輯深度拆解</td><td>破執的穿透力、中道不二、空性能容——三個《中論》視角。承上一章「不入二法」的線索，本章下潛至最底層。以《中論》的三個視角——破執的極致穿透力、中道不二的實踐、空性能容（空故能大）——說明大乘戰車與無邊大海並非比喻，而是「諸法無自性」的必然結果。</td><td>不入二法、諸法無自性、破執的穿透力、中道不二</td></tr><tr><td>第六章</td><td>總結：全息邏輯導圖與經首語的哲學投影</td><td>從見地到結果的因果鏈，與經首語的全息意義。三維拆解完畢，本章收束全品：先以總結對比表並排小乘與大乘的「見地→心法→結果」，再以四步驟全息邏輯導圖串起全品骨架，最後回答開篇的追問——大乘經初並列兩眾，正是最高真理的一次全息投影。</td><td>見地→心法→結果、從見地到結果的因果鏈，與經首語的全息意義</td></tr></tbody></table><p class="c4p2-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p2Btn"),BOX=document.getElementById("c4p2Box"),MODAL=document.getElementById("c4p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P2:END-->
+
+<!--WY-C4P3:BEGIN-->
+<style id="wy-c4p3-css">
+.c4p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p3-fabbox.show{display:block;}
+.c4p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p3-modal.open{display:flex;}
+.c4p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p3-close:hover{background:#e3d5b8;}
+.c4p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p3-tbl th,.c4p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p3-fabbox{right:14px;}.c4p3-tbl{font-size:11.5px;}.c4p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p3-fabbox" id="c4p3Box"><button class="c4p3-btn" id="c4p3Btn" type="button" aria-label="開啟全景總表"><span class="c4p3-ic">&#9638;</span><span class="c4p3-ls"><span class="c4p3-l1">本品 &middot; 金剛大心・論菩提薩埵之義</span><span class="c4p3-l2">金剛山根基頂峰中軸・五條心法・菩提薩埵二諦映射</span></span></button></div><div class="c4p3-modal" id="c4p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p3-card"><button class="c4p3-close" id="c4p3Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第三品 金剛大心・論菩提薩埵之義 · 全景總表</h3><p class="sub">卷四・第3品｜全八章｜依原典通讀整理</p><table class="c4p3-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>導論：雙論交織的解析框架</td><td>為何結合《大智度論》與《中論》兩條進路。此品要解答一個看似簡單、實則貫穿整部大乘佛法的問題—— 菩提薩埵究竟是什麼？龍樹菩薩在《大智度論》釋初品中，以兩個叩問將之層層剖開：先問本體（「何等名菩提？</td><td>何等名菩提？何等名薩埵？、齊何來名菩提薩埵？、金剛山</td></tr><tr><td>第二章</td><td>命題一·原典叩問</td><td>何等名菩提？何等名薩埵？——四層遞進解答。本章進入命題一的原典叩問。龍樹以極短的一問，開啟對「菩提薩埵」最基礎的字義剖析，並以四個「復次」層層加深——從字義雙軌、字根讚歎、利他動機，到三乘辨偽。</td><td>菩提薩埵、復次、何等名菩提？何等名薩埵？——四層遞進解答</td></tr><tr><td>第三章</td><td>命題一·邏輯四重拆解</td><td>字義・讚歎・慈悲・究竟的不可顛倒遞進。命題一的回答由四個「復次」串起，看似散落的訓詁與辯論，實為一條不能顛倒的遞進路線。</td><td>復次、字義・讚歎・慈悲・究竟的不可顛倒遞進</td></tr><tr><td>第四章</td><td>命題一·三大核心心法</td><td>金剛大心・度眾動機・空智實相。四重邏輯給出菩薩的定義骨架，本章把冷靜的定義還原為可實踐的「心法」。龍樹在命題一的答覆中埋藏了三條核心心法——金剛不壞的大心（意志）、索佛道旨在度眾生（動機）、知一切法實性（智慧）。</td><td>心法、金剛大心・度眾動機・空智實相</td></tr><tr><td>第五章</td><td>中觀統攝：二諦中道與三層映射</td><td>借《中論》框架定位菩提、薩埵與中道。《大智度論》的字義與心法分析已給出菩薩的「內容」，本章引入更高的哲學座標系——《中論》的二諦與中道。</td><td>內容、借《中論》框架定位菩提、薩埵與中道</td></tr><tr><td>第六章</td><td>命題二·原典叩問與三段邏輯</td><td>齊何來名菩提薩埵？——三事與時空界定。命題一確立了菩薩的本體，命題二進一步問：從哪一刻起、到哪一刻止，這個人可以被稱為菩提薩埵？</td><td>三事、初發心至第九無礙、齊何來名菩提薩埵？——三事與時空界定</td></tr><tr><td>第七章</td><td>命題二·核心心法與二諦映射</td><td>絕對願力・無堅不摧的實踐力・中道收束。命題一已給出三條心法，但命題二要求的是——在初發心到金剛三昧之間的漫長修行中，如何把心法延續無量劫而不退？</td><td>絕對願力・無堅不摧的實踐力・中道收束</td></tr><tr><td>第八章</td><td>全景總結與記憶口訣</td><td>構建金剛山・本體與時空的八句真言。前七章已把《大智度論》的兩問、五條心法、《中論》的二諦中道全部展開。本章將所有成果收束為一個統一意象——金剛山：以世俗諦為根基、勝義諦為頂峰…</td><td>構建金剛山・本體與時空的八句真言</td></tr></tbody></table><p class="c4p3-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p3Btn"),BOX=document.getElementById("c4p3Box"),MODAL=document.getElementById("c4p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P3:END-->
+
+<!--WY-C4P4:BEGIN-->
+<style id="wy-c4p4-css">
+.c4p4-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p4-fabbox.show{display:block;}
+.c4p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p4-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p4-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p4-modal.open{display:flex;}
+.c4p4-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p4-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p4-close:hover{background:#e3d5b8;}
+.c4p4-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p4-tbl th,.c4p4-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p4-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p4-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p4-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p4-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p4-fabbox{right:14px;}.c4p4-tbl{font-size:11.5px;}.c4p4-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p4-fabbox" id="c4p4Box"><button class="c4p4-btn" id="c4p4Btn" type="button" aria-label="開啟全景總表"><span class="c4p4-ic">&#9638;</span><span class="c4p4-ls"><span class="c4p4-l1">本品 &middot; 菩薩道的時間、心法與緣起邏輯</span><span class="c4p4-l2">阿鞞跋致與三阿僧祇・意業種相多思和合・百劫九十一劫中道</span></span></button></div><div class="c4p4-modal" id="c4p4Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p4-card"><button class="c4p4-close" id="c4p4Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第四品 菩薩道的時間、心法與緣起邏輯 · 全景總表</h3><p class="sub">卷四・第4品｜全十章｜依原典通讀整理</p><table class="c4p4-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>解構菩薩道的分析維度</td><td>建立「表面事相—核心心法—究竟實相」的三層判讀架構。龍樹菩薩在《大智度論》中討論「菩薩阿鞞跋致」與「三十二相業因緣」，若只讀字面，極易落入「要湊滿幾項條件才算菩薩」的外相算計。</td><td>菩薩阿鞞跋致、三十二相業因緣、要湊滿幾項條件才算菩薩、真俗二諦</td></tr><tr><td>第二章</td><td>阿鞞跋致辨 · 退與不退的判定邏輯</td><td>兩種判準、一法二法三法防護網、空悲雙運的二諦平衡。本章對應原典開篇。龍樹先安立「鞞跋致／阿鞞跋致」兩類菩薩的分別，再以「一法—二法—三法」的遞進結構，列舉大乘不退轉的判準：從「常一心集諸善法、正直精進」的底層行動…</td><td>鞞跋致／阿鞞跋致、一法—二法—三法、常一心集諸善法、正直精進、實知空又不捨眾生</td></tr><tr><td>第三章</td><td>三阿僧祇 · 時間的無量架構</td><td>推翻算數極限的三大劫，與內心成長的三階段。承上章「種三十二相業」的引線，論主先追問時間：種相須「過三阿僧祇劫」。本章處理這段無量時間…</td><td>種三十二相業、過三阿僧祇劫、不自知、了了自知</td></tr><tr><td>第四章</td><td>三十二相業 · 種植的客觀條件</td><td>聲聞乘的漏斗型限縮邏輯 vs 大乘的心性超越。三阿僧祇圓滿，菩薩進入「種三十二相業」。本章面對聲聞乘為種相設下的六重客觀條件——空間、地點、載體、性別、時機、對象，一層層收窄如漏斗。</td><td>種三十二相業、性空、絕對的限制力、法執</td></tr><tr><td>第五章</td><td>業力樞紐 · 唯意業能種相</td><td>身口粗鈍、意業最利；五識如鏡、意識如匠。條件之執既破，論主轉入「內在造作」：三十二相雖展現於外在身相，種相之業卻不在身、不在口，唯在「意」。</td><td>內在造作、不能分別、修行的著力點</td></tr><tr><td>第六章</td><td>何相初種 · 破除次序的執著</td><td>「足安立相」與「紺青眼相」兩派諍論，與龍樹的破斥。種相既由意識主導，隨之而來的問題是：三十二相中，哪一相「最先」種下？古德有兩派——一派主張先種「足安立相」打地基，一派主張先種「紺青眼相」啟悲心。</td><td>足安立相、紺青眼相、最先、此兩語雖有是語，不必爾也</td></tr><tr><td>第七章</td><td>一思多思 · 從線性到和合量變</td><td>三十二思種三十二相，一一相百福德莊嚴。次序之執既破，論主轉問「數量與因果」：種一個相，是憑「一思」精準對應，還是須「多思和合」共同促成？</td><td>數量與因果、一思、多思和合、一念心</td></tr><tr><td>第八章</td><td>一福德 · 從世俗到實相的層層推進</td><td>六種定義：轉輪王 → 三千大千 → 盲者復明 → 唯佛能知。「一一相百福德莊嚴」既出，論主追問：一個「福德」到底有多大？龍樹罕見地一口氣引述六種說法，並讓它們由淺入深、層層加碼：從世俗權力的極致，到宇宙量級的總和，到悲心拔苦的絕對救贖…</td><td>一一相百福德莊嚴、福德、不可量、不可譬喻、定義升級</td></tr><tr><td>第九章</td><td>百劫與九十一劫 · 時間的可超越性</td><td>常規的百劫雕琢，與釋迦牟尼菩薩如何跨越九劫。福德歸於無量，論主回到最後一個時間問題：種滿三十二相要花多久？原典答得乾脆——「極遲百劫，極疾九十一劫」。</td><td>極遲百劫，極疾九十一劫、常規、超越九劫</td></tr><tr><td>第十章</td><td>菩薩道成佛系統架構 · 終極啟示</td><td>四大系統合一，歸於「不捨一法、不執一法」的中道。前九章已逐一走過：分析維度、阿鞞跋致、三阿僧祇、種相條件、意業樞紐、何相初種、一思多思、一福德、百劫九十一劫。</td><td>不捨一法、不執一法、菩薩道成佛系統架構、中道</td></tr></tbody></table><p class="c4p4-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p4Btn"),BOX=document.getElementById("c4p4Box"),MODAL=document.getElementById("c4p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P4:END-->
+
+<!--WY-C4P5:BEGIN-->
+<style id="wy-c4p5-css">
+.c4p5-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p5-fabbox.show{display:block;}
+.c4p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p5-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p5-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p5-modal.open{display:flex;}
+.c4p5-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p5-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p5-close:hover{background:#e3d5b8;}
+.c4p5-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p5-tbl th,.c4p5-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p5-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p5-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p5-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p5-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p5-fabbox{right:14px;}.c4p5-tbl{font-size:11.5px;}.c4p5-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p5-fabbox" id="c4p5Box"><button class="c4p5-btn" id="c4p5Btn" type="button" aria-label="開啟全景總表"><span class="c4p5-ic">&#9638;</span><span class="c4p5-ls"><span class="c4p5-l1">本品 &middot; 釋迦與彌勒的修證辯悟</span><span class="c4p5-l2">弗沙佛七日超九劫・多言必散一念契空・我法雙空極致利他</span></span></button></div><div class="c4p5-modal" id="c4p5Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p5-card"><button class="c4p5-close" id="c4p5Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第五品 釋迦與彌勒的修證辯悟 · 全景總表</h3><p class="sub">卷四・第5品｜全九章｜依原典通讀整理</p><table class="c4p5-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>解構菩薩道的底層邏輯</td><td>Decoding the Underlying Logic of the Bodhisattva Path。本品不採傳統敘事法，而以「顧問式案例拆解法」介入。要問的不是「故事怎麼發生」，而是「在現象界的有限資源下，菩薩的心識到底用了哪一套底層演算法？</td><td>顧問式案例拆解法、故事怎麼發生、文本→邏輯→心法→中觀</td></tr><tr><td>第二章</td><td>弗沙佛時代的修證交叉點</td><td>The Cross-Point of Cultivation in the Age of Puṣya Buddha。本章交代舞台與人物。故事發生在「過去久遠劫」，時間尺度本身已超出凡夫認知。</td><td>過去久遠劫</td></tr><tr><td>第三章</td><td>案例一文本 · 七日一偈</td><td>Text One: Seven Days, One Verse。本章呈現案例一的完整原典。請注意兩個細節：其一，釋迦當時以「外道仙人」的身份出現——不是僧團內部，不是正統背景；其二，他見佛後啟動了一組極不對稱的行為：翹一腳立、目未曾眴、七日七夜…</td><td>外道仙人</td></tr><tr><td>第四章</td><td>邏輯拆解一 · 從多言到一念</td><td>Logical Deconstruction I: From Verbosity to Single-Thought Laser。本章把案例一的反直覺決策，層層轉譯為可驗證的結構邏輯。第一層：能力預設下的矛盾…</td><td>一念極致</td></tr><tr><td>第五章</td><td>心法與中觀一 · 戲論息滅</td><td>Mind Method &amp; Madhyamaka I: Quelling Conceptual Proliferation。本章把案例一的邏輯翻譯為修行者可操作的心法，再拉升到《中論》的本體論視角。兩個心法：至誠無妄的極致專一、刻意捨棄「聰明我執」的純真。</td><td>聰明我執</td></tr><tr><td>第六章</td><td>案例二文本 · 弟子先熟的分配悖論</td><td>Text Two: The Paradox of Disciples Ripening First。本章呈現案例二的原典。與案例一不同，本章的問答不在「作偈方式」，而直擊修行者最難面對的處境—— 導師的境界竟落後於弟子 。</td><td>作偈方式</td></tr><tr><td>第七章</td><td>邏輯拆解二 · 資源分配與果報翻轉</td><td>Logical Deconstruction II: Resource Allocation &amp; the Reversal of Outcomes。本章用二維矩陣為案例二建立座標系。縱軸是心純淑程度，橫軸是資源分配對象（自利／利他）。</td><td>效率判斷</td></tr><tr><td>第八章</td><td>心法與中觀二 · 我法雙空</td><td>Mind Method &amp; Madhyamaka II: Emptiness of Self and Dharma。本章從內心操作與本體論兩個層次闡釋案例二。心法層：大乘菩薩最難放下的不是名利，而是「自身修行境界」本身；釋迦寧可耽誤自己成佛的進度，也要和光同塵。</td><td>自身修行境界、我要趕快純淑</td></tr><tr><td>第九章</td><td>智悲雙軌與中觀修證方程式</td><td>The Complete Bodhisattva Path &amp; the Madhyamaka Equation。本章將兩條軌道交疊，呈現菩薩道的完整拼圖。兩則案例不是可獨立存在的公案，它們是同一組齒輪的左右兩邊——智齒輪與悲齒輪必須互為表裡一起轉動，才能驅動菩薩道。</td><td>The Complete…</td></tr></tbody></table><p class="c4p5-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p5Btn"),BOX=document.getElementById("c4p5Box"),MODAL=document.getElementById("c4p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P5:END-->
+
+<!--WY-C4P6:BEGIN-->
+<style id="wy-c4p6-css">
+.c4p6-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p6-fabbox.show{display:block;}
+.c4p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p6-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p6-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p6-modal.open{display:flex;}
+.c4p6-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p6-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p6-close:hover{background:#e3d5b8;}
+.c4p6-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p6-tbl th,.c4p6-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p6-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p6-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p6-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p6-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p6-fabbox{right:14px;}.c4p6-tbl{font-size:11.5px;}.c4p6-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p6-fabbox" id="c4p6Box"><button class="c4p6-btn" id="c4p6Btn" type="button" aria-label="開啟全景總表"><span class="c4p6-ic">&#9638;</span><span class="c4p6-ls"><span class="c4p6-l1">本品 &middot; 六度波羅蜜圓滿因緣</span><span class="c4p6-l2">六度圓滿四階辯證・三輪體空・般若戲論息滅</span></span></button></div><div class="c4p6-modal" id="c4p6Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p6-card"><button class="c4p6-close" id="c4p6Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第六品 六度波羅蜜圓滿因緣 · 全景總表</h3><p class="sub">卷四・第6品｜全八章｜依原典通讀整理</p><table class="c4p6-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>何謂「滿」——凡夫與菩薩的《中論》距離</td><td>經典開章 · 四階辯證解構框架。本品總攝《大智度論》卷四對「六波羅蜜滿」的解析。佛在因地修菩薩行，歷九十一大劫圓滿六度——但「圓滿」二字究竟何指？</td><td>六波羅蜜滿、圓滿、四階辯證</td></tr><tr><td>第二章</td><td>檀波羅蜜 · 無法平衡的生死天平</td><td>布施 · 尸毘王割肉貿鴿。承上章「四階辯證」框架，本章以檀波羅蜜（布施）為第一個範例。尸毘王為救一鴿而自割身肉，當鴿身恆重於王肉時，世俗的「等量交換」徹底失效——問題的關鍵，在於天平上始終放著一個「剩餘的自我」。</td><td>四階辯證、等量交換、剩餘的自我</td></tr><tr><td>第三章</td><td>尸羅波羅蜜 · 一諾重於王國</td><td>持戒 · 須陀須摩王守實語。布施圓滿於「三輪體空」之後，本章轉入持戒。須陀須摩王被鬼王擄去，卻只為早晨對乞者的一句布施承諾而涕泣——他畏的不是死，而是失信。</td><td>三輪體空、生存大於一切、持戒、須陀須摩王守實語</td></tr><tr><td>第四章</td><td>羼提波羅蜜 · 平靜映照利刃的明鏡</td><td>忍辱 · 羼提比丘為迦梨王所截。持戒解決了「主動守信」的難題，本章面對「被動受害」的極限。羼提比丘被迦梨王截斷手足耳鼻，文本將傷害從「罵」一路遞進到「奪命」——而菩薩的反應是絕對的零。</td><td>主動守信、被動受害、奪命、受害</td></tr><tr><td>第五章</td><td>毘梨耶波羅蜜 · 誓乾大海的定海神針</td><td>精進 · 大施抒海與翹足讚佛。忍辱解決了「對抗惡意」的難題，本章面對「對抗物理法則」的極限。大施菩薩誓言以一身一勺抒乾大海，讚弗沙佛者七日七夜翹一腳——在世俗效益評估中這兩者都是不可能且無意義的任務。</td><td>對抗惡意、對抗物理法則、精進、大施抒海與翹足讚佛</td></tr><tr><td>第六章</td><td>禪波羅蜜 · 枯木頂上的生機鳥巢</td><td>禪定 · 尚闍梨仙人螺髻鳥巢。精進示範了動態的極致，本章轉入靜態的極致。尚闍梨仙人入無出入息的深定，鳥於螺髻中生子、不動不搖至雛鳥飛去。</td><td>定得多深、不動、禪定、尚闍梨仙人螺髻鳥巢</td></tr><tr><td>第七章</td><td>般若波羅蜜 · 擊碎量尺的虛空之月</td><td>智慧 · 劬嬪陀大臣分閻浮提。前五度各自圓滿於對應的中觀心法，本章進入統攝一切的般若。劬嬪陀大臣能將大地精準分割為七分，被讚為智慧的極致——但龍樹菩薩嚴厲破斥「汝言大失！</td><td>汝言大失！、智慧、劬嬪陀大臣分閻浮提</td></tr><tr><td>第八章</td><td>總攝 · 前五度如盲，以般若為導航</td><td>六度統攝 · 中觀核心檢核表 · 終極圓滿。六度逐一解構完畢，本章回到全品的頂層。前五度是「事相上的極限挑戰」，般若中觀是「化解悖論的後邏輯」——兩者如何透過一座三稜鏡，將有漏的善行折射為無漏的「波羅蜜」。</td><td>事相上的極限挑戰、化解悖論的後邏輯、波羅蜜</td></tr></tbody></table><p class="c4p6-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p6Btn"),BOX=document.getElementById("c4p6Box"),MODAL=document.getElementById("c4p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P6:END-->
+
+<!--WY-C4P7:BEGIN-->
+<style id="wy-c4p7-css">
+.c4p7-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p7-fabbox.show{display:block;}
+.c4p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p7-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p7-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p7-modal.open{display:flex;}
+.c4p7-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p7-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p7-close:hover{background:#e3d5b8;}
+.c4p7-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p7-tbl th,.c4p7-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p7-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p7-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p7-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p7-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p7-fabbox{right:14px;}.c4p7-tbl{font-size:11.5px;}.c4p7-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p7-fabbox" id="c4p7Box"><button class="c4p7-btn" id="c4p7Btn" type="button" aria-label="開啟全景總表"><span class="c4p7-ic">&#9638;</span><span class="c4p7-ls"><span class="c4p7-l1">本品 &middot; 兜率中道・菩薩受生處之義助</span><span class="c4p7-l2">兜率天不上不下・中道十字準心・現象即本體必然顯現</span></span></button></div><div class="c4p7-modal" id="c4p7Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p7-card"><button class="c4p7-close" id="c4p7Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第七品 兜率中道・菩薩受生處之義助 · 全景總表</h3><p class="sub">卷四・第7品｜全十章｜依原典通讀整理</p><table class="c4p7-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>原典公案</td><td>《大智度論》菩薩兜率天上生之問。本品一切討論皆起於一則公案：菩薩六波羅蜜滿，在迦葉佛所作弟子，持淨戒、行功德，生於兜率天上。</td><td>大有福德，應自在生、《大智度論》菩薩兜率天上生之問</td></tr><tr><td>第二章</td><td>終極抉擇</td><td>具足無上福德，為何不選擇最高境界？。以福德論之，菩薩本可「自在生」；以快樂論之，上界天的禪悅已臻極致。若「能力最大化」理應帶來「享受最大化」，菩薩為何偏偏選擇「中間」？</td><td>自在生、能力最大化、享受最大化、中間</td></tr><tr><td>第三章</td><td>三層演進路徑</td><td>外層現象 · 中層動機 · 內層本體。「兜率之謎」可視為一個同心圓結構。由外而內，必須依序解答三問：現象為何如此配合？</td><td>兜率之謎、巧合、實相</td></tr><tr><td>第四章</td><td>因果法則</td><td>維度一 ─ 因緣業熟的客觀必然。外層現象的第一維度是因果。「有人言：因緣業熟，應在是中生。</td><td>唯一必然解、維度一 ─ 因緣業熟的客觀必然</td></tr><tr><td>第五章</td><td>環境邏輯</td><td>維度二 ─ 結使厚利與最佳清明帶。「下地中結使厚濁，上地中結使利；兜率天上結使不厚不利，智慧安隱故。」本章透過「厚濁—安隱—利」三字光譜，呈現菩薩所需的最佳修行環境…</td><td>厚濁—安隱—利、微細的煩惱、維度二 ─ 結使厚利與最佳清明帶</td></tr><tr><td>第六章</td><td>時間邏輯</td><td>維度三 ─ 不早不晚的完美對接。「不欲過佛出世時故……兜率天壽，與佛出時會故。」菩薩降世度生必須解決一個嚴苛的時機問題：下地天壽太短，會錯失佛世；上地天壽太長，會越過佛世。</td><td>與佛出時會、維度三 ─ 不早不晚的完美對接</td></tr><tr><td>第七章</td><td>空間象徵</td><td>維度四 ─ 上三下三的絕對中心。「佛常居中道故。兜率天於六天及梵之中，上三、下三。</td><td>正中央、維度四 ─ 上三下三的絕對中心</td></tr><tr><td>第八章</td><td>核心心法</td><td>從境到心 ─ 不貪極樂，念念在中。現象界的完美巧合，本質上是主觀動機的外顯。本章把外層的四維度最佳化，收攝為菩薩的兩大核心心法：其一，不貪極樂、唯求最適；其二，念念在中的圓滿境界。</td><td>為何不生上界、為何必生中天、從境到心 ─ 不貪極樂，念念在中</td></tr><tr><td>第九章</td><td>中觀本體</td><td>視角躍升 ─ 不落二邊的絕對中道。《中論》旨在破除對任何極端（常斷、一異、來去、生滅）的實體執著。中道不是「兩者之間妥協的中間點」，而是「超越兩極的絕對實相」。</td><td>兩者之間妥協的中間點、超越兩極的絕對實相、心理／時間／時空</td></tr><tr><td>第十章</td><td>終極洞見</td><td>十字準心 · 必然顯現 · 日常修心。當現象與本體合為一環，我們便能理解：菩薩受生兜率，不是在眾多選項中「挑」出來的中間點，而是證悟中道實相後，其清淨心智在法界中必然顯現的時空座標。</td><td>完美的十字準心、十字準心、必然顯現、日常修心</td></tr></tbody></table><p class="c4p7-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p7Btn"),BOX=document.getElementById("c4p7Box"),MODAL=document.getElementById("c4p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P7:END-->
+
+<!--WY-C4P8:BEGIN-->
+<style id="wy-c4p8-css">
+.c4p8-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p8-fabbox.show{display:block;}
+.c4p8-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p8-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p8-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p8-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p8-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p8-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p8-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p8-modal.open{display:flex;}
+.c4p8-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p8-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p8-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p8-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p8-close:hover{background:#e3d5b8;}
+.c4p8-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p8-tbl th,.c4p8-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p8-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p8-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p8-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p8-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p8-fabbox{right:14px;}.c4p8-tbl{font-size:11.5px;}.c4p8-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p8-fabbox" id="c4p8Box"><button class="c4p8-btn" id="c4p8Btn" type="button" aria-label="開啟全景總表"><span class="c4p8-ic">&#9638;</span><span class="c4p8-ls"><span class="c4p8-l1">本品 &middot; 大乘菩薩降生與入胎的底層邏輯</span><span class="c4p8-l2">四種觀正慧入胎・末後身圓滿示現・緣起無明性空三軸</span></span></button></div><div class="c4p8-modal" id="c4p8Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p8-card"><button class="c4p8-close" id="c4p8Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第八品 大乘菩薩降生與入胎的底層邏輯 · 全景總表</h3><p class="sub">卷四・第8品｜全六章｜依原典通讀整理</p><table class="c4p8-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>第一章 · 中觀解碼框架</td><td>The Madhyamaka Lens — 建立閱讀座標。閱讀《大智度論》這段降生文本之前，必須先放下「神話閱讀模式」。本章不處理經文本身，而是為後面各章的逐句拆解預先建立一個分析座標。</td><td>神話閱讀模式、四觀人間、從天而降、正慧入胎</td></tr><tr><td>第二章</td><td>第二章 · 降生前的四種觀</td><td>The Four Contemplations — 巨觀條件的極致篩選。經文一開頭即點明：菩薩在兜率天最後一次下生之前，並非隨機降臨，而是先行「四種觀」——觀時、觀土地、觀種姓、觀生處。</td><td>四種觀、迦毘羅婆淨飯王后</td></tr><tr><td>第三章</td><td>第三章 · 從天而降的三重邏輯</td><td>Why Descend from Heaven, Not from Earth?。經文以「問曰—答曰」的辯證結構，直接逼問為何一切菩薩末後身必從天上來，而不從人中來。</td><td>問曰—答曰</td></tr><tr><td>第四章</td><td>第四章 · 正慧入胎的三重對比</td><td>Right Mindfulness Entering the Womb — 三層辨異。論主緊接著提出第二組問答，把焦點從「天人路徑」收回到「入胎剎那」的心識現場。這一章是全段最精細的部分，論主以三個對比維度—— 覺知力的連續性 、 驅動力的性質 、 目的性的本質 …</td><td>天人路徑、入胎剎那、正慧</td></tr><tr><td>第五章</td><td>第五章 · 末後身的圓滿示現</td><td>The Final Declaration — 行七步、三十二相與極致緣起。經文最後收束於一個極具象徵力量的場景：菩薩滿十月正慧不失，出胎行七步，開口宣告「是我末後身」；繼而相師觀三十二相，預言轉輪聖王或成佛兩種可能。</td><td>是我末後身、末後身、三十二相、極致緣起</td></tr><tr><td>第六章</td><td>第六章 · 全景回顧與底層邏輯</td><td>The Grand Synthesis — 降生入胎之中觀邏輯總表。前五章依次處理了降生前的巨觀條件、從天而降的三重理由、正慧入胎的三重對比、末後身的圓滿示現。</td><td>現象／世俗諦（緣起）、心法／破我執（無明）、本體／勝義諦（性空）</td></tr></tbody></table><p class="c4p8-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p8-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p8Btn"),BOX=document.getElementById("c4p8Box"),MODAL=document.getElementById("c4p8Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=7;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p8Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P8:END-->
+
+<!--WY-C4P9:BEGIN-->
+<style id="wy-c4p9-css">
+.c4p9-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p9-fabbox.show{display:block;}
+.c4p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p9-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p9-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p9-modal.open{display:flex;}
+.c4p9-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p9-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p9-close:hover{background:#e3d5b8;}
+.c4p9-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p9-tbl th,.c4p9-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p9-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p9-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p9-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p9-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p9-fabbox{right:14px;}.c4p9-tbl{font-size:11.5px;}.c4p9-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p9-fabbox" id="c4p9Box"><button class="c4p9-btn" id="c4p9Btn" type="button" aria-label="開啟全景總表"><span class="c4p9-ic">&#9638;</span><span class="c4p9-ls"><span class="c4p9-l1">本品 &middot; 三十二大人相</span><span class="c4p9-l2">三十二相由業感非巧飾・四重讀法相辯理觀・肉身即法身</span></span></button></div><div class="c4p9-modal" id="c4p9Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p9-card"><button class="c4p9-close" id="c4p9Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第九品 三十二大人相 · 全景總表</h3><p class="sub">卷四・第9品｜序章＋全六章｜依原典通讀整理</p><table class="c4p9-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>卷首總論</td><td>王問何等三十二相 · 跨越神話 · 立四重解讀綱領。本章是全篇的「緣起幕」與「方法論幕」。《大智度論》此段承接前文「太子誕生，諸相具足，淨飯王集諸相師審定吉祥」之敘事，由王發問「何等三十二相？</td><td>緣起幕、方法論幕、何等三十二相？、物理偶像</td></tr><tr><td>第二章</td><td>足部之相</td><td>節一至節七 · 相一至相七 · 從足下安平到足趺高滿。相師陳述三十二相，第一步從「足下」開始。本章七節（相一至相七）皆以「足」為主題，可再細分三層： 足底與足跟 （節一、二、四）顯行住之平穩與輪相之殊勝； 手足指與指間 （節三…</td><td>足下、絕對業力的顯化、足下二輪相</td></tr><tr><td>第三章</td><td>立姿與身形之相</td><td>節一至節四 · 相八至相十一 · 伊泥延腨、手摩膝、陰藏、身廣長等。本章四節（相八至相十一）從「腓腸」向上延伸到「手臂下垂及膝」「陰藏（密處內收）」與「身廣長等」，是由足部過渡到全身比例的關鍵階段，核心問題是：如何以「靜立之姿」顯出如來身形之完美。</td><td>腓腸、手臂下垂及膝、陰藏（密處內收）、身廣長等</td></tr><tr><td>第四章</td><td>身毛與金色之相</td><td>節一至節五 · 相十二至相十六 · 毛上向、一孔一毛、金色、丈光、細薄皮。本章五節（相十二至相十六）專論菩薩身體的「色」與「光」：每一根毛都向上旋生（節一）、一孔生一毛而不亂（節二）、通身金色（節三）、四邊各放一丈光明（節四）、皮薄不著塵（節五）。</td><td>超越與攝受的極致、金色、有多亮、層層對比、不斷剝奪</td></tr><tr><td>第五章</td><td>軀幹肩頸之相</td><td>節一至節五 · 相十七至相二十一 · 七處隆滿、兩腋隆滿、上身如師子、大直身、肩圓好。本章五節（相十七至相二十一）論菩薩軀幹部位之莊嚴：七處隆滿（兩手、兩足、兩肩、項中皆滿）、兩腋下不凹不陷、上半身如師子王、身形最大最直、肩膀渾圓。</td><td>上身之相、由內而外的客觀投射、零雜染的物理實證、緣起無自性</td></tr><tr><td>第六章</td><td>齒舌聲味之相</td><td>節一至節七 · 相二十二至相二十八 · 四十齒、齒齊、牙白、師子頰、上味、大舌、梵聲。本章七節（相二十二至相二十八）全部圍繞「口」展開：四十齒（凡人三十二齒）、諸齒齊密、牙白如雪山、頰如師子王平廣、嚐食皆成上味、舌長能覆面至髮際、聲如梵天之五種妙音。</td><td>最高效的度眾生理結構、味中得上味、空寂、妙用</td></tr><tr><td>第七章</td><td>眼目與頂髻之相</td><td>節一至節四 · 相二十九至相三十二 · 真青眼、牛眼睫、頂髻、白毛。本章四節（相二十九至相三十二）為全篇最終收束，對應頭部的眼、睫、頂與眉間：真青眼如好青蓮華；牛眼睫長好不亂；頂髻如拳等之骨髻隆起於頂；白毛則是眉間那一縷「舒長五尺」的白毫，右旋而不高不下。</td><td>舒長五尺、結論幕、節一至節四、相二十九至相三十二</td></tr></tbody></table><p class="c4p9-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p9Btn"),BOX=document.getElementById("c4p9Box"),MODAL=document.getElementById("c4p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P9:END-->
+
+<!--WY-C4P10:BEGIN-->
+<style id="wy-c4p10-css">
+.c4p10-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p10-fabbox.show{display:block;}
+.c4p10-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p10-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p10-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p10-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p10-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p10-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p10-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p10-modal.open{display:flex;}
+.c4p10-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p10-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p10-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p10-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p10-close:hover{background:#e3d5b8;}
+.c4p10-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p10-tbl th,.c4p10-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p10-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p10-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p10-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p10-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p10-fabbox{right:14px;}.c4p10-tbl{font-size:11.5px;}.c4p10-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p10-fabbox" id="c4p10Box"><button class="c4p10-btn" id="c4p10Btn" type="button" aria-label="開啟全景總表"><span class="c4p10-ic">&#9638;</span><span class="c4p10-ls"><span class="c4p10-l1">本品 &middot; 三十二相・四門中觀解構法</span><span class="c4p10-l2">四門中觀解構・同相不同質・法身不增不減全息映射</span></span></button></div><div class="c4p10-modal" id="c4p10Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p10-card"><button class="c4p10-close" id="c4p10Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第十品 三十二相・四門中觀解構法 · 全景總表</h3><p class="sub">卷四・第10品｜全五章｜依原典通讀整理</p><table class="c4p10-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>比較門</td><td>菩薩 vs. 轉輪聖王 · 同相不同質的因果對比。表面上，轉輪聖王與菩薩同具三十二相，這讓許多研讀者誤以為兩者只是階位高下的差別。</td><td>七事勝、菩薩 vs. 轉輪聖王、同相不同質的因果對比</td></tr><tr><td>第二章</td><td>認知門</td><td>「相」的本質定義 · 基於差異與功能的介面。上一章論證了菩薩相殊勝於轉輪聖王，但並未解釋「相」的根本定義。本章要回答一個更基礎的問題： 什麼叫「相」？</td><td>差異、被認知的方便、「相」的本質定義、基於差異與功能的介面</td></tr><tr><td>第三章</td><td>絕對門</td><td>為何不多不少？· 物理與真理的絕對同構。前一章確認了「相」是為認知而立的介面。那自然的下一步：既然是施設，何以恰恰要三十二？</td><td>過猶不及、系統平衡、不增不減</td></tr><tr><td>第四章</td><td>目的門</td><td>為何以相嚴身？· 內外相稱的完美載體。前三章從比較、認知、絕對三個角度解構了「相」的本質，但一個關鍵的目的論問題依舊懸而未決：既然空性為究竟，為什麼菩薩還要花無量劫去修相？</td><td>豪貴家女與莊嚴房室、為何以相嚴身？、內外相稱的完美載體</td></tr><tr><td>第五章</td><td>總結矩陣</td><td>四門中觀解構法 · 藍圖一覽。綜合鳥瞰 頂級的經典研讀，不在於背誦名相，而在於透視文字背後的緣起空性。下方矩陣將四門 × 四層解構路徑濃縮成一張圖：從原典核心文獻，到邏輯解構、菩薩心法，最後收攝於中觀視角。</td><td>四門中觀解構法、藍圖一覽</td></tr></tbody></table><p class="c4p10-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p10-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p10Btn"),BOX=document.getElementById("c4p10Box"),MODAL=document.getElementById("c4p10Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=9;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p10Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P10:END-->
+
+<!--WY-C4P11:BEGIN-->
+<style id="wy-c4p11-css">
+.c4p11-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p11-fabbox.show{display:block;}
+.c4p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p11-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p11-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p11-modal.open{display:flex;}
+.c4p11-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p11-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p11-close:hover{background:#e3d5b8;}
+.c4p11-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p11-tbl th,.c4p11-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p11-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p11-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p11-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p11-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p11-fabbox{right:14px;}.c4p11-tbl{font-size:11.5px;}.c4p11-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p11-fabbox" id="c4p11Box"><button class="c4p11-btn" id="c4p11Btn" type="button" aria-label="開啟全景總表"><span class="c4p11-ic">&#9638;</span><span class="c4p11-ls"><span class="c4p11-l1">本品 &middot; 覺者之境・佛道與菩薩之中觀邏輯</span><span class="c4p11-l2">盡智無生智體用雙運・十力三意止・空有不二假名無性</span></span></button></div><div class="c4p11-modal" id="c4p11Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p11-card"><button class="c4p11-close" id="c4p11Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第十一品 覺者之境・佛道與菩薩之中觀邏輯 · 全景總表</h3><p class="sub">卷四・第11品｜全十一章｜依原典通讀整理</p><table class="c4p11-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>緣起：兩大核心問答與四層次解構法</td><td>本品的問答結構與本閱讀本的解析方法。《大智度論》第四卷第十一品以兩組問答貫串「佛」與「菩薩」的本體論與階位論。第一問探討覺者的本體——「得何功德故名為佛？</td><td>菩薩、得何功德故名為佛？、本品的問答結構與本閱讀本的解析方法</td></tr><tr><td>第二章</td><td>探問覺者：盡智與無生智</td><td>煩惱的徹底清零與絕對不可逆的單行道。承前章揭示的第一問「得何功德故名為佛」，本章依原典作答。論主的答覆分為兩層：先以「盡智、無生智」一句點出覺者的本體，再以「復次，有人言」補出一份龐大的功德清單。</td><td>得何功德故名為佛、盡智、無生智、復次，有人言、清零本體</td></tr><tr><td>第三章</td><td>佛陀功德的體與用</td><td>從個人的徹底解脫到大乘佛陀的全能救度。盡智、無生智是覺者的「體」，屬於自利的徹底圓滿；但大乘之佛，不僅止於自利，更必須具備無盡的「用」以度化眾生。</td><td>復次，有人言、從個人的徹底解脫到大乘佛陀的全能救度</td></tr><tr><td>第四章</td><td>大用展開（一）：絕對的硬實力</td><td>十力・四無所畏・十八不共法・總相別相悉知。承前章「體與用」之結構，本章專論大用的第一面向——硬實力。所謂硬實力，是佛陀在「智」的層面達到的絕對飽和：十力是十種拔群的洞察與智力；四無所畏是說法時絕對的自信與無畏；十八不共法是唯佛獨有…</td><td>體與用、十力・四無所畏・十八不共法・總相別相悉知</td></tr><tr><td>第五章</td><td>大用展開（二）：絕對的軟實力——三意止</td><td>「八風不動」的極致平常心與純粹利他。硬實力是智的絕對，軟實力則是定與悲的絕對。本章專論原典所列的「三意止」——面對受教敬重、不受教不敬重、乃至敬重與不敬重同時出現，佛陀心境分別「無喜、無憂、無異」。</td><td>八風不動、三意止、無喜、無憂、無異、百分之百純粹的利他</td></tr><tr><td>第六章</td><td>佛陀本體邏輯總結</td><td>覺者之境的核心公式與貫串全品的命題。前四章分別解析了清零本體（盡智、無生智）、硬實力（十力等）與軟實力（三意止）。本章將三者收攝為一道公式，並點出貫串全品的核心命題——強大的力量必須以大慈悲導航。</td><td>覺者本體論、菩薩道實修、覺者之境的核心公式與貫串全品的命題</td></tr><tr><td>第七章</td><td>三大極致內功心法</td><td>從佛陀功德淬鍊出的菩薩實修準則。前六章完成覺者本體論的建構，但若止於描述佛果而不化為可行的修行準則，則如望月而不知月。</td><td>徹底斷絕、八風不動、悲智等持</td></tr><tr><td>第八章</td><td>中觀視角：二諦圓融的佛果</td><td>勝義體空證無生，世俗妙有具十力。《大智度論》之所以能把「清零本體」與「無限大用」融為一體，關鍵在中觀二諦的統攝。</td><td>清零本體、無限大用、三意止、十力無畏</td></tr><tr><td>第九章</td><td>探問階位：菩薩與佛的動態更迭</td><td>追求者 vs. 圓滿者 · 心愛著求與得佛道的界線。前八章從「本體」論覺者；本章起三章從「階位」論覺者。原典第二問直擊：菩薩與佛之別，不在「本質」上差一截，而在「狀態」上分兩期——未得佛道者，心中充滿對無上菩提的「心愛著求」…</td><td>本體、階位、本質、狀態</td></tr><tr><td>第十章</td><td>階位覆蓋與假名無性</td><td>王子登基之譬喻 · 因果相續而名號絕不混淆。承前章「名實相符」之義，本章以原典的「王子登基」譬喻為核心，從兩個視角解析階位更迭的機制。</td><td>名實相符、王子登基、覆蓋、丟棄</td></tr><tr><td>第十一章</td><td>覺者之境總圖與終極銘記</td><td>從文本定義到實修心法 · 從世俗因果到勝義空性。本章為全品的收攝。前十章分別從本體、心法、二諦與階位四個維度解構了覺者的完整面貌——現在必須將其歸結為一張總圖與一首總偈。</td><td>勝義諦 vs. 世俗諦、從文本定義到實修心法、從世俗因果到勝義空性</td></tr></tbody></table><p class="c4p11-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p11Btn"),BOX=document.getElementById("c4p11Box"),MODAL=document.getElementById("c4p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P11:END-->
+
+<!--WY-C4P12:BEGIN-->
+<style id="wy-c4p12-css">
+.c4p12-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p12-fabbox.show{display:block;}
+.c4p12-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p12-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p12-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p12-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p12-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p12-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p12-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p12-modal.open{display:flex;}
+.c4p12-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p12-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p12-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p12-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p12-close:hover{background:#e3d5b8;}
+.c4p12-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p12-tbl th,.c4p12-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p12-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p12-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p12-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p12-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p12-fabbox{right:14px;}.c4p12-tbl{font-size:11.5px;}.c4p12-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p12-fabbox" id="c4p12Box"><button class="c4p12-btn" id="c4p12Btn" type="button" aria-label="開啟全景總表"><span class="c4p12-ic">&#9638;</span><span class="c4p12-ls"><span class="c4p12-l1">本品 &middot; 菩薩論議・降維打擊與中觀解構</span><span class="c4p12-l2">時間身相階位三重辯證・破邪顯正無自性・本質心法覺醒心法</span></span></button></div><div class="c4p12-modal" id="c4p12Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p12-card"><button class="c4p12-close" id="c4p12Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第十二品 菩薩論議・降維打擊與中觀解構 · 全景總表</h3><p class="sub">卷四・第12品｜全八章｜依原典通讀整理</p><table class="c4p12-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>爭端再起：誰擁有「菩薩」的終極詮釋權？</td><td>Vol.4 · Pin.12 · Ch.1 — The Right to Define a Bodhisattva。在《大智度論．釋初品》這一段文本中，龍樹菩薩並非憑空批駁，而是先完整引述聲聞體系（迦旃延尼子弟子輩）對菩薩相義的定義，再以「大河／小渠」的譬喻點出其根本問題：把可測量的外相當作本質…</td><td>菩薩、大河／小渠、細節對錯、該用什麼語法去描述菩薩</td></tr><tr><td>第二章</td><td>解構藍圖：大乘菩薩對僵化教條的三重降維打擊</td><td>Vol.4 · Pin.12 · Ch.2 — Three-fold Dimensional Strike。本章提供全書的「作戰地圖」。龍樹對聲聞論師所做的三次打擊，其實對應三條不同層次的執著：把 時間 當作實體（時間執）、把 身相 當作實體（表相執）、把 階位 當作實體（階層執）。</td><td>作戰地圖</td></tr><tr><td>第三章</td><td>第一重辯證：菩薩資格的本質邏輯</td><td>Vol.4 · Pin.12 · Ch.3 — Timesheet vs. Action。第一重辯證處理的是最直觀的量尺——「時間」。聲聞論師主張「滿三阿僧祇劫才叫菩薩」，龍樹則以兩個無法迴避的反例回敬： （一） 大薩陀婆自殺救商人…</td><td>時間、滿三阿僧祇劫才叫菩薩、三十二相</td></tr><tr><td>第四章</td><td>第二重辯證：價值的本質邏輯</td><td>Vol.4 · Pin.12 · Ch.4 — Physical Marks vs. Inner Seal。聲聞論師從時間退到身相：「必須具足三十二大人相，才可被稱為菩薩。」龍樹的反擊分三步： （一） 列舉一張反例表——轉輪王、天魔、提婆達多、難陀、凡夫，各個都具備不等程度的「大人相」…</td><td>大人相、世俗福報、大相</td></tr><tr><td>第五章</td><td>第三重辯證：心智的本質邏輯</td><td>Vol.4 · Pin.12 · Ch.5 — Mechanical Ladder vs. Non-linear Awakening。這是三重辯證的最後一層，也是最深的一層。聲聞論師設計了一套「不知 → 知而不說 → 知而能說」的三階段線性覺醒模型，聽起來很合理，也很可量化。</td><td>第二劫才知且不說</td></tr><tr><td>第六章</td><td>從辯證到實踐：大乘菩薩的兩大核心心法</td><td>Vol.4 · Pin.12 · Ch.6 — Two Pillars。整整三章的破斥不是為破而破，而是為了讓讀者看清真正可以依靠的東西。龍樹給出的正面答案極為精煉：不要依賴時間、不要依賴身相、不要依賴階位；真正能憑藉的只有兩支柱…</td><td>菩薩如何行動、菩薩如何安住</td></tr><tr><td>第七章</td><td>中觀最高視角：辯論背後的底層哲學代碼</td><td>Vol.4 · Pin.12 · Ch.7 — Prasajya Pratiṣedha。到目前為止，我們看到的都是龍樹在「外場」的辯證成果。但外場的勝負只是結果，真正驅動這些結果的是龍樹的 方法論核心 ——中觀。</td><td>外場、實體</td></tr><tr><td>第八章</td><td>結語：超越量尺與打卡表的真實大乘</td><td>Vol.4 · Pin.12 · Ch.8 — The Real Bodhisattva Path。做一個總收尾的畫面：在波濤中，有一方手持「打卡表」與「量尺」對沒有物理特徵的人喊著不合格；另一方則已折斷量尺，縱身躍入駭浪拯救眾生。</td><td>打卡表、量尺</td></tr></tbody></table><p class="c4p12-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p12-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p12Btn"),BOX=document.getElementById("c4p12Box"),MODAL=document.getElementById("c4p12Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=11;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p12Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P12:END-->
+
+<!--WY-C4P13:BEGIN-->
+<style id="wy-c4p13-css">
+.c4p13-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p13-fabbox.show{display:block;}
+.c4p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p13-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p13-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p13-modal.open{display:flex;}
+.c4p13-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p13-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p13-close:hover{background:#e3d5b8;}
+.c4p13-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p13-tbl th,.c4p13-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p13-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p13-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p13-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p13-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p13-fabbox{right:14px;}.c4p13-tbl{font-size:11.5px;}.c4p13-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p13-fabbox" id="c4p13Box"><button class="c4p13-btn" id="c4p13Btn" type="button" aria-label="開啟全景總表"><span class="c4p13-ic">&#9638;</span><span class="c4p13-ls"><span class="c4p13-l1">本品 &middot; 辯三十二相種業因緣</span><span class="c4p13-l2">破界定律多思和合・自性見與緣起法・百福相扛起成佛重擔</span></span></button></div><div class="c4p13-modal" id="c4p13Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p13-card"><button class="c4p13-close" id="c4p13Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第十三品 辯三十二相種業因緣 · 全景總表</h3><p class="sub">卷四・第13品｜全六章｜依原典通讀整理</p><table class="c4p13-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>破題與立論</td><td>兩乘的底層碰撞。本章開門見山，交代整段辯論的舞台。經文一開篇便拋出質疑：「佛明明說無量阿僧祇劫作功德度眾生，為何此處又言三阿僧祇劫？</td><td>兩乘的底層碰撞</td></tr><tr><td>第二章</td><td>空間與身分的破界邏輯</td><td>瓦解三大客觀限制。承上章淨信之根既立，本章進入第一層實質論戰。聲聞部派主張：要種下三十二相的業因緣，必須同時滿足三道「極端嚴苛的客觀條件」——僅限欲界、僅限人道、僅限閻浮提。</td><td>極端嚴苛的客觀條件、空間與身分、瓦解三大客觀限制</td></tr><tr><td>第三章</td><td>心理與因果的聚變邏輯</td><td>念頭的生滅與和合。破除外部空間限制後，龍樹把視角拉進心念的微觀宇宙。聲聞主張「一個善念就能種下一個大相」，龍樹指出這是違背心識實相的天真預期：「一心中不住、不能分別」，彈指頃便有六十生滅…</td><td>一個善念就能種下一個大相、一心中不住、不能分別、多思和合能種一相</td></tr><tr><td>第四章</td><td>大乘菩薩三大心法</td><td>從理論轉向實修。前兩章的辯論並非純粹的文字遊戲，而是為高階實修者提煉的心理基石。本章把龍樹的破斥結晶為三條可被受持、可被觀修的「心法」：尋根心法（絕不疑佛）、平等心法（唯認大心）、滴水穿石心法（多思和合）。</td><td>心法、從理論轉向實修</td></tr><tr><td>第五章</td><td>《中論》底層邏輯</td><td>破自性、顯緣起。這段辯論完美對應了龍樹菩薩《中論》最核心的思想體系。聲聞的錯誤可濃縮為一個術語：「自性見」——把「欲界、人道、閻浮提、一思」視為具有絕對不變的實體標籤。</td><td>自性見、欲界、人道、閻浮提、一思、緣起法</td></tr><tr><td>第六章</td><td>終極意象與記憶口訣</td><td>小乘之困與大乘無礙。最後一章以兩幅意象完成整段辯論的視覺收束：小乘彷彿自困於「閻浮提人道」的小箱內，又以單股細線懸吊金佛首級於剎那，隨時斷裂；大乘則如浩瀚宇宙，與梵天、龍王並肩齊心，匯聚無數細絲編成粗壯纜繩…</td><td>閻浮提人道、小乘之困與大乘無礙</td></tr></tbody></table><p class="c4p13-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p13Btn"),BOX=document.getElementById("c4p13Box"),MODAL=document.getElementById("c4p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P13:END-->
+
+<!--WY-C4P14:BEGIN-->
+<style id="wy-c4p14-css">
+.c4p14-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p14-fabbox.show{display:block;}
+.c4p14-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p14-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p14-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p14-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p14-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p14-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p14-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p14-modal.open{display:flex;}
+.c4p14-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p14-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p14-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p14-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p14-close:hover{background:#e3d5b8;}
+.c4p14-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p14-tbl th,.c4p14-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p14-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p14-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p14-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p14-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p14-fabbox{right:14px;}.c4p14-tbl{font-size:11.5px;}.c4p14-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p14-fabbox" id="c4p14Box"><button class="c4p14-btn" id="c4p14Btn" type="button" aria-label="開啟全景總表"><span class="c4p14-ic">&#9638;</span><span class="c4p14-ls"><span class="c4p14-l1">本品 &middot; 中觀邏輯解構・破執七關</span><span class="c4p14-l2">布施般若時空機率七關・依量不臆・二諦圓融隨時歸因</span></span></button></div><div class="c4p14-modal" id="c4p14Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p14-card"><button class="c4p14-close" id="c4p14Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第十四品 中觀邏輯解構・破執七關 · 全景總表</h3><p class="sub">卷四・第14品｜全八章｜依原典通讀整理</p><table class="c4p14-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>第一章序論 — 破執的三道關卡</td><td>解構綱要 · 龍樹菩薩的三項中觀兵器 · 核心問答對照矩陣。閱讀第十四品的辯論之前，讀者必須先理解一件事：小乘論師所提出的每一個質疑，背後其實都建立在同一組「實體預設」上——把布施、般若、壽命、宇宙、佛出世都視為有固定邊界…</td><td>實體預設、解構綱要、龍樹菩薩的三項中觀兵器、核心問答對照矩陣</td></tr><tr><td>第二章</td><td>第二章破「弟子心未純淑」臆說</td><td>論斷須依教證理證 · 破無據增益之執。辯論的序幕，並不是從布施、般若這些空性論題拉開的。小乘論師先憑著釋迦菩薩「七日七夜讚弗沙佛」的精進典故，反推出「彌勒一系弟子心未純淑」的結論。</td><td>弟子心未純淑、七日七夜讚弗沙佛、彌勒一系弟子心未純淑</td></tr><tr><td>第三章</td><td>第三章破布施事相執著</td><td>三輪體空 · 為何「割肉飼鷹」仍非檀波羅蜜滿。小乘論師先設下一個看似無懈可擊的典範：尸毘王為救鴿而割自身肉餵鷹，心無悔恨。他們認為這已經是布施的極致，是「檀波羅蜜滿」。</td><td>割肉飼鷹、檀波羅蜜滿、施者、受者、所施物</td></tr><tr><td>第四章</td><td>第四章破般若算數戲論</td><td>戲論息滅 · 「分別七分」為何只是海中一渧。上一章指出布施若落入「三事心著」只能得世俗福德，小乘於是退到更抽象的層面——他們主張「般若波羅蜜滿」即是能把大地、城郭、聚落精細地分作七分的數理分析能力。</td><td>分別七分、三事心著、般若波羅蜜滿、智慧</td></tr><tr><td>第五章</td><td>第五章破壽命決定論</td><td>佛法不待時 · 長壽即福德 · 諸佛實體的歷史反證。小乘從「事相」退到「般若概念」被破之後，再退一步到「時間規則」——他們提出四種觀（觀時、觀土地、觀種族、觀生處），主張佛陀出世必須嚴格遵守「人壽八萬歲到一百歲之間」的時鐘邏輯。</td><td>事相、般若概念、時間規則、人壽八萬歲到一百歲之間</td></tr><tr><td>第六章</td><td>第六章破單一宇宙觀</td><td>多病多藥師 · 涅槃物理學 · 尺度錯位之謎。上一章把時間維度打開後，小乘立刻築起最後一道牆：他們承認三世有佛、承認無量劫中有多位佛陀，但堅持「十方空間」同一時刻只能有釋迦文尼一位現在佛。</td><td>十方空間、一世間無二佛、涅槃物理學</td></tr><tr><td>第七章</td><td>第七章破「易得難值」矛盾</td><td>客觀時空 · 主觀業力 · 二諦圓融的終極心法。小乘拋出最後的反問：如果十方充滿佛，佛豈不是應該非常容易遇到？為何經中偏偏說「佛出世如漚曇婆羅樹華時時一出」？</td><td>易得難值、宏觀機率、微觀機率、佛多</td></tr><tr><td>第八章</td><td>第八章中觀邏輯自學總表</td><td>The Madhyamaka Matrix · 七組議題縱覽與記憶心法。前面七章以「議題—原典—解構—承啟」的結構，完整演繹了《大智度論》卷四第十四品的整場辯論。</td><td>議題—原典—解構—承啟、七組議題縱覽與記憶心法</td></tr></tbody></table><p class="c4p14-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p14-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p14Btn"),BOX=document.getElementById("c4p14Box"),MODAL=document.getElementById("c4p14Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=13;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p14Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P14:END-->
+
+<!--WY-C4P15:BEGIN-->
+<style id="wy-c4p15-css">
+.c4p15-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p15-fabbox.show{display:block;}
+.c4p15-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p15-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p15-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p15-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p15-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p15-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p15-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p15-modal.open{display:flex;}
+.c4p15-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p15-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p15-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p15-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p15-close:hover{background:#e3d5b8;}
+.c4p15-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p15-tbl th,.c4p15-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p15-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p15-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p15-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p15-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+@media(max-width:900px){.c4p15-fabbox{right:14px;}.c4p15-tbl{font-size:11.5px;}.c4p15-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p15-fabbox" id="c4p15Box"><button class="c4p15-btn" id="c4p15Btn" type="button" aria-label="開啟全景總表"><span class="c4p15-ic">&#9638;</span><span class="c4p15-ls"><span class="c4p15-l1">本品 &middot; 中觀邏輯的解構與重建</span><span class="c4p15-l2">怨懟與傲慢兩大迷思・黑傘金缽相待而有・中觀動態平衡矩陣</span></span></button></div><div class="c4p15-modal" id="c4p15Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p15-card"><button class="c4p15-close" id="c4p15Close" type="button" aria-label="關閉">&times;</button><h3>卷四·第十五品 中觀邏輯的解構與重建 · 全景總表</h3><p class="sub">卷四・第15品｜全十二章｜依原典通讀整理</p><table class="c4p15-tbl"><thead><tr><th>章</th><th>主題</th><th>核心命題</th><th>關鍵名相</th></tr></thead><tbody><tr><td>第一章</td><td>第一章 · 導論 · 兩大邏輯悖論</td><td>菩提道上的外部怨懟與內部傲慢。修行者行於菩提道上，最容易栽在兩組看似相反、實則同源的邏輯盲區。本章作為全品的開卷，要先把這兩個盲區命名出來，並為後續各章的解構與重建，建立一張可對照的「藍圖」。</td><td>藍圖、菩提道上的外部怨懟與內部傲慢</td></tr><tr><td>第二章</td><td>第二章 · 原典初問 · 佛陀為何不現身救我</td><td>終結「單向救贖」的被棄感。第一章已把兩大悖論的舞台搭好。本章要把悖論 A 的最原始樣貌，直接從《大智度論》的原典裡摘出來──讓那句問難自己發聲，並完整呈現龍樹菩薩答辯所引的關鍵偈頌。</td><td>單向救贖、終結「單向救贖」的被棄感</td></tr><tr><td>第三章</td><td>第三章 · 三重邏輯轉化 · 破「單向救贖」</td><td>屏蔽效應 · 全頻段廣播 · 匹配機制。悖論 A 的核心病因，是把「救贖」想成只有一個變量的線性過程。本章要做的，就是用三組物理比喻，把這個一元線性模型，徹底翻修成「雙端耦合 + 匹配」的系統模型。</td><td>單向救贖、救贖、雙端耦合 + 匹配</td></tr><tr><td>第四章</td><td>第四章 · 中觀勝義（一）· 緣起法則與大悲性空</td><td>從物理比喻躍升為哲學命題。第三章把「救贖」解釋成了雙端匹配，但這還只是「經驗物理層」。中觀勝義要更進一步：它要追問「為什麼會有這個匹配機制？</td><td>救贖、經驗物理層、為什麼會有這個匹配機制？、緣起</td></tr><tr><td>第五章</td><td>第五章 · 心法提煉（一）· 黑傘與金缽</td><td>向內歸因 · 厚積薄發。哲學解構若不能落地，便失去了意義。本章要把第三、第四章的長論，濃縮成兩幅視覺圖像與兩條修行心法── 黑傘 代表「無量劫罪垢的自我遮蔽」， 金缽 代表「衰罪已除、福智已熟的接收容器」。</td><td>無量劫罪垢的自我遮蔽、向內歸因、厚積薄發</td></tr><tr><td>第六章</td><td>第六章 · 原典次問 · 何必待佛度我</td><td>終結「獨立自生」的傲慢見。第一大問題被化解後，修行者的心被安定了下來，把注意力轉回自己。但危險就在這裡：一旦過度強調自力，會立刻滑入「我本來就有福慧、不需要佛」的傲慢見。</td><td>獨立自生、我本來就有福慧、不需要佛、終結「獨立自生」的傲慢見</td></tr><tr><td>第七章</td><td>第七章 · 三重邏輯轉化 · 破「獨立自生」</td><td>版權溯源 · 量變質變 · 盲眼日明。對治傲慢見比對治怨懟見更棘手，因為傲慢見穿著一件「我很努力」的外衣。本章會用三組比喻──版權、量變質變、盲眼日明──把「自有福慧」的幻象一層層剝開：第一組破它的歷史源頭…</td><td>獨立自生、我很努力、自有福慧</td></tr><tr><td>第八章</td><td>第八章 · 中觀勝義（二）· 破自性見與相待而有</td><td>從因果比喻躍升為根本命題。上一章已指出，所謂「自有福慧」在因果追溯下站不住腳。本章要把這句話提升為《中論》的根本命題：「 福慧沒有實體的自性，它必然是緣起的產物 。</td><td>自有福慧、自有、從因果比喻躍升為根本命題</td></tr><tr><td>第九章</td><td>第九章 · 心法提煉（二）· 飲水思源與內外等持</td><td>破自性見眼需日明方現前。本章要為迷思二給出日常可用的兩條心法： 飲水思源 處理歷史溯源層，破「我的一切都是我」的傲慢； 內外等持 處理當下運作層，破「不需要外緣」的偏廢。</td><td>我的一切都是我、不需要外緣、自力／他力</td></tr><tr><td>第十章</td><td>第十章 · 終極統合 · 對治矩陣與解脫齒輪</td><td>中觀業力圖像的核心口訣。前九章處理的是「如何破」的個別問題。第十章要處理的是「如何看整體」的問題： 兩大悖論放在一起，中觀給出的對治矩陣是什麼？</td><td>如何破、如何看整體、中觀業力圖像的核心口訣</td></tr><tr><td>第十一章</td><td>第十一章 · 延伸叩問與結語 · 真理不在極端</td><td>跨文本的哲學對接 · 學術溯源。《大智度論》第十五品的兩大問答，表面上解決了「佛救度」與「自力得度」的衝突，實際上卻為讀者悄悄開啟了一道通往《中論》核心命題的大門。</td><td>佛救度、自力得度、跨文本的哲學對接、學術溯源</td></tr><tr><td>第十二章</td><td>第十二章 · 原典全文 ·《大智度論》卷十五</td><td>佛德度世與眾生福因論 · 問答段落。本章為《大智度論》第十五品的完整原典，龍樹菩薩造、鳩摩羅什譯。前面十一章的所有拆解、比喻與視覺化，其源頭都在這短短一段文字之中。</td><td>佛德度世與眾生福因論、問答段落</td></tr></tbody></table><p class="c4p15-note">總表依本品原典通讀整理，供快速掌握章節脈絡與核心命題；欲窮其義，仍請詳讀本品全文。</p></div></div>
+<script id="wy-c4p15-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p15Btn"),BOX=document.getElementById("c4p15Box"),MODAL=document.getElementById("c4p15Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=14;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,.wy-video-fab,.floating-yt,#wyVideoBtn,#vid-floating,#floatingYt,#vidFab,.vid-fab,#videoFab,#wyFab,#wy-fab,.wy-vbtn,#wyChapterVideo";
+function visible(e){
+  var r=e.getBoundingClientRect(),st=getComputedStyle(e);
+  if(r.height<=0||st.display==="none"||st.visibility==="hidden")return false;
+  var op=parseFloat(st.opacity);if(!isNaN(op)&&op<0.05)return false;
+  if(st.pointerEvents==="none"&&op<0.5)return false;
+  return true;
+}
+function fab(){
+  var els=document.querySelectorAll(FSEL);
+  for(var i=0;i<els.length;i++){ if(visible(els[i]))return els[i]; }
+  return null;
+}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect();base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p15Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P15:END-->
+<!--WY-C4TOC:BEGIN-->
+<style id="wy-c4toc-css">
+.toc-actions{position:absolute;right:10px;bottom:8px;z-index:3;display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end;}
+.toc-actions .toc-yt{position:static !important;right:auto !important;bottom:auto !important;}
+.toc-tbl{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:14px;cursor:pointer;background:linear-gradient(135deg,#8b5e3c,#a9803f);color:#fff;font-family:"Noto Sans TC",sans-serif;font-size:11.5px;letter-spacing:1px;font-weight:600;line-height:1.25;white-space:nowrap;box-shadow:0 1px 4px rgba(139,94,60,.4);border:1px solid rgba(255,255,255,.2);user-select:none;transition:filter .2s,transform .2s,box-shadow .2s;}
+.toc-tbl:hover{filter:brightness(1.08);transform:translateY(-1px);box-shadow:0 4px 12px rgba(139,94,60,.5);}
+.toc-tbl:focus-visible{outline:2px solid #d4a84b;outline-offset:2px;}
+.toc-tbl .tt-ic{font-size:10.5px;line-height:1;}
+@media(max-width:520px){.toc-tbl{padding:3px 8px;letter-spacing:.3px;}}
+</style>
+<script id="wy-c4toc-js">(function(){
+function nOf(card){var m=(card.getAttribute("data-target")||"").match(/^pin-(\d+)$/);return m?m[1]:null;}
+function build(){
+  var cards=document.querySelectorAll(".toc-card");
+  for(var i=0;i<cards.length;i++){
+    var wrap=cards[i];
+    if(wrap.querySelector(".toc-actions"))continue;
+    var n=nOf(wrap);if(!n)continue;
+    var act=document.createElement("div");act.className="toc-actions";
+    var tbl=document.createElement("span");tbl.className="toc-tbl";tbl.setAttribute("data-tbl",n);
+    tbl.setAttribute("role","button");tbl.setAttribute("tabindex","0");
+    tbl.setAttribute("aria-label","第"+n+"品 全景總表");tbl.title="本品全景總表";
+    tbl.innerHTML='<span class="tt-ic">&#9638;</span>總表';
+    act.appendChild(tbl);
+    var vid=wrap.querySelector(".toc-yt");if(vid){act.appendChild(vid);}
+    wrap.appendChild(act);
+  }
+}
+function openT(n){var m=document.getElementById("c4p"+n+"Modal");if(m){m.classList.add("open");}else{}}
+document.addEventListener("click",function(e){
+  var b=(e.target&&e.target.closest)?e.target.closest(".toc-tbl"):null;if(!b)return;
+  e.preventDefault();e.stopPropagation();openT(b.getAttribute("data-tbl"));
+},true);
+document.addEventListener("keydown",function(e){
+  if(e.key!=="Enter"&&e.key!==" ")return;
+  var b=(e.target&&e.target.closest)?e.target.closest(".toc-tbl"):null;if(!b)return;
+  e.preventDefault();openT(b.getAttribute("data-tbl"));
+});
+build();
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",build);
+var c=0,iv=setInterval(function(){build();if(++c>20)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4TOC:END-->
 </body></html>
