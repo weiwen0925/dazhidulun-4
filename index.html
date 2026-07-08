@@ -1330,4 +1330,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C4P5:END-->
+<!--WY-C4P6:BEGIN-->
+<style id="wy-c4p6-css">
+.c4p6-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p6-fabbox.show{display:block;}
+.c4p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p6-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p6-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p6-modal.open{display:flex;}
+.c4p6-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p6-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p6-close:hover{background:#e3d5b8;}
+.c4p6-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c4p6-tbl th,.c4p6-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p6-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p6-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p6-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p6-tbl b{color:#8b2500;}
+.c4p6-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c4p6-note b{color:#8b2500;}
+@media(max-width:900px){.c4p6-fabbox{right:14px;}.c4p6-tbl{font-size:11.5px;}.c4p6-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p6-fabbox" id="c4p6Box"><button class="c4p6-btn" id="c4p6Btn" type="button" aria-label="開啟全景總表"><span class="c4p6-ic">▦</span><span class="c4p6-ls"><span class="c4p6-l1">本品 · 六度波羅蜜圓滿因緣</span><span class="c4p6-l2">六度圓滿四階辯證・三輪體空・般若戲論息滅</span></span></button></div><div class="c4p6-modal" id="c4p6Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p6-card"><button class="c4p6-close" id="c4p6Close" type="button" aria-label="關閉">×</button><h3>卷四·第六品 六度波羅蜜圓滿因緣 · 全景總表</h3><p class="sub">卷四・第6品｜尸毘割肉・須陀須摩守信・羼提受截・大施抒海・般若統攝</p><table class="c4p6-tbl"><caption>一、四階辯證框架與檀尸二度（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>圓滿之問</td><td>佛因地修菩薩行歷九十一大劫圓滿六度，「圓滿」二字究竟何指？四階辯證解構框架總攝全品</td></tr><tr><td>檀波羅蜜</td><td>尸毘王割肉貿鴿——鴿身恆重於王肉，世俗等量交換徹底失效，關鍵在天平上那個「剩餘的自我」</td></tr><tr><td>尸羅波羅蜜</td><td>須陀須摩王守實語——被鬼王擄去仍為晨間布施承諾涕泣，畏的不是死而是失信，三輪體空之後轉入持戒範疇</td></tr></tbody></table><table class="c4p6-tbl"><caption>二、忍進禪三度·對抗惡意與物理法則的極限</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>羼提波羅蜜</td><td>羼提比丘為迦梨王所截手足耳鼻，傷害從罵一路遞進至奪命，菩薩反應是絕對的零——被動受害的極限示現</td></tr><tr><td>毘梨耶波羅蜜</td><td>大施菩薩誓乾大海、翹足七日讚佛，世俗效益評估中皆屬不可能任務，卻正是對抗物理法則的精進極限</td></tr><tr><td>禪波羅蜜</td><td>尚闍梨仙人入無出入息深定，鳥於螺髻中生子至雛鳥飛去仍不動不搖——枯木頂上生機鳥巢，展現靜態禪定之極致</td></tr></tbody></table><table class="c4p6-tbl"><caption>三、般若統攝與六度總表（含中觀）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>般若波羅蜜</td><td>劬嬪陀大臣精準分閻浮提為七分被讚智慧極致，龍樹卻嚴厲破斥「汝言大失」——般若非世智算計，而是統攝一切的空智</td></tr><tr><td>六度總攝</td><td>前五度是事相上的極限挑戰，般若中觀是化解悖論的後邏輯，三稜鏡般將有漏善行折射為無漏波羅蜜</td></tr><tr><td>中觀收攝</td><td>割肉、守諾、受截、抒海、深定，皆是「有相善行」推至極限而顯其「無相」——唯有般若照破「剩餘的自我」，五度才真正圓滿為波羅蜜而非停留於人天福報</td></tr></tbody></table><p class="c4p6-note">六則本生公案表面各自驚心動魄，實則共構一組「以事顯理」的辯證：尸毘王的天平失衡、須陀須摩的以死守諾、羼提比丘的絕對受害、大施菩薩的誓乾大海、尚闍梨的入定忘身，五度皆被推至世俗效益無法評估的極限——正是在這極限處，般若的空智才顯出它不可或缺的導航作用：沒有照破「剩餘自我」的智慧，再驚人的苦行也只是有漏福報，唯般若能將其淬鍊為真正的波羅蜜。</p></div></div>
+<script id="wy-c4p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p6Btn"),BOX=document.getElementById("c4p6Box"),MODAL=document.getElementById("c4p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P6:END-->
 </body></html>
