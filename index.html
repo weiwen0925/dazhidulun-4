@@ -1489,4 +1489,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C4P8:END-->
+<!--WY-C4P9:BEGIN-->
+<style id="wy-c4p9-css">
+.c4p9-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c4p9-fabbox.show{display:block;}
+.c4p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c4p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c4p9-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c4p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c4p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c4p9-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c4p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c4p9-modal.open{display:flex;}
+.c4p9-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c4p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c4p9-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c4p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c4p9-close:hover{background:#e3d5b8;}
+.c4p9-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c4p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c4p9-tbl th,.c4p9-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c4p9-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c4p9-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c4p9-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c4p9-tbl b{color:#8b2500;}
+.c4p9-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c4p9-note b{color:#8b2500;}
+@media(max-width:900px){.c4p9-fabbox{right:14px;}.c4p9-tbl{font-size:11.5px;}.c4p9-card{padding:26px 14px 16px;}}
+</style>
+<div class="c4p9-fabbox" id="c4p9Box"><button class="c4p9-btn" id="c4p9Btn" type="button" aria-label="開啟全景總表"><span class="c4p9-ic">▦</span><span class="c4p9-ls"><span class="c4p9-l1">本品 · 三十二大人相</span><span class="c4p9-l2">三十二相由業感非巧飾・四重讀法相辯理觀・肉身即法身</span></span></button></div><div class="c4p9-modal" id="c4p9Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c4p9-card"><button class="c4p9-close" id="c4p9Close" type="button" aria-label="關閉">×</button><h3>卷四·第九品 三十二大人相 · 全景總表</h3><p class="sub">卷四・第9品｜序章＋全六章｜足部・立姿・色光・軀幹・齒舌・眼目頂髻七相群</p><table class="c4p9-tbl"><caption>一、緣起方法論與足部之相（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>緣起幕與方法論</td><td>太子誕生諸相具足，淨飯王集相師審定吉祥，王問「何等三十二相」——跨越神話敘事，立四重解讀綱領解碼相好</td></tr><tr><td>足部之相</td><td>相一至相七，從足下安平到足趺高滿——足底足跟顯行住之平穩與輪相殊勝，手足指間顯絕對業力的顯化</td></tr><tr><td>立姿身形之相</td><td>相八至相十一，伊泥延腨、手摩膝、陰藏、身廣長等，由足部過渡至全身比例，以靜立之姿顯如來身形完美</td></tr></tbody></table><table class="c4p9-tbl"><caption>二、色光莊嚴與軀幹口相</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>身毛金色之相</td><td>相十二至相十六，毛上向、一孔一毛、通身金色、四邊丈光、細薄皮——專論色與光，層層對比展現超越與攝受的極致</td></tr><tr><td>軀幹肩頸之相</td><td>相十七至相二十一，七處隆滿、兩腋隆滿、上身如師子、大直身、肩圓好——由內而外的客觀投射，零雜染的物理實證</td></tr><tr><td>齒舌聲味之相</td><td>相二十二至相二十八，四十齒、齒齊、牙白、師子頰、上味、大舌、梵聲——全篇圍繞口展開，是最高效的度眾生理結構</td></tr></tbody></table><table class="c4p9-tbl"><caption>三、眼目頂髻與相好總攝（含中觀）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>眼目頂髻之相</td><td>相二十九至相三十二，真青眼、牛眼睫、頂髻、白毛（舒長五尺）——全篇最終收束，對應頭部眼睫頂眉之相</td></tr><tr><td>三十二相總覽</td><td>從足下到頂髻，由下而上逐一莊嚴，構成一套完整無缺的相好系統，是三十二大人相的結論幕</td></tr><tr><td>中觀收攝</td><td>三十二相雖是物理偶像般的莊嚴示現，其背後是絕對業力與緣起無自性的顯化——相好本身即是「緣起性空而宛然有相」的活教材，非凡夫肉眼所見之表相所能窮盡</td></tr></tbody></table><p class="c4p9-note">三十二相從足下的輪相一路寫到頂髻的白毫，字面看似一份鉅細靡遺的「身體清單」，但每一相的成就皆繫於無量劫的業因緣——絕非偶然的生理特徵，而是慈悲與智慧長劫熏修的物理顯化。讀三十二相若只停在「莊嚴殊勝」的讚歎，便錯過了龍樹真正要指出的：相好雖有，其性本空，緣起業力宛然示現，正是即相而離相的中道範例。</p></div></div>
+<script id="wy-c4p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c4p9Btn"),BOX=document.getElementById("c4p9Box"),MODAL=document.getElementById("c4p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#floatYt,.float-yt,#wyFloatYt,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c4p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4P9:END-->
 </body></html>
