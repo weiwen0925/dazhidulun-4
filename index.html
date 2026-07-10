@@ -2234,4 +2234,53 @@ else window.addEventListener('load',function(){setTimeout(bhGo,200);});
 })();
 </script>
 <!--WY-GOTO:END-->
+<!--WY-BH4P1:BEGIN-->
+<style id="wy-bh4p1-css">
+.bh4p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh4p1-fabbox.show{display:block;}
+.bh4p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh4p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh4p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh4p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh4p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh4p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh4p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh4p1-modal.open{display:flex;}
+.bh4p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh4p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh4p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh4p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh4p1-close:hover{background:#dde2e6;}
+.bh4p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh4p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh4p1-tbl th,.bh4p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh4p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh4p1-tbl thead th:nth-child(1){width:32%;}.bh4p1-tbl thead th:nth-child(2){width:41%;}.bh4p1-tbl thead th:nth-child(3){width:27%;}
+.bh4p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh4p1-guan{background:#eef2f5;color:#37505f;}
+.bh4p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh4p1-tbl tbody tr:nth-child(even) td.bh4p1-guan{background:#e8eef2;}
+.bh4p1-tbl b{color:#8b2500;}
+.bh4p1-guan b{color:#2f6b5a;}
+.bh4p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh4p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh4p1-fabbox{right:14px;}.bh4p1-tbl{font-size:11px;}.bh4p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh4p1-fabbox" id="bh4p1Box"><button class="bh4p1-btn" id="bh4p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh4p1-ic">譯</span><span class="bh4p1-ls"><span class="bh4p1-l1">本品 · 原文·白話·中觀</span><span class="bh4p1-l2">白話翻譯表</span></span></button></div><div class="bh4p1-modal" id="bh4p1Modal" role="dialog" aria-modal="true"><div class="bh4p1-card"><button class="bh4p1-close" id="bh4p1Close" type="button" aria-label="關閉">×</button><h3>卷四 · 第1品 白話翻譯表（五輪問答：菩薩何以殿後、何以別說）</h3><p class="sub">《大智度論》卷四第1品「釋初品中菩薩」五輪問答 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh4p1-tbl"><caption>釋初品中菩薩·五輪問答 · 原文｜白話翻譯｜中觀概念（共12段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh4p1-src">【經】復有菩薩摩訶薩。</td><td>（經文）此外，還有諸大菩薩摩訶薩（在場聽法）。</td><td class="bh4p1-guan"><b>經文序分的假名列眾</b>——經文序分依世俗慣例臚列與會大眾，此句只是平舖直敘地補入菩薩一類，尚未觸及論主後續要辨析的甚深義理，僅作為引發五輪問答的引子。</td></tr><tr><td class="bh4p1-src">問曰：若從上數，應先菩薩，次第比丘、比丘尼、優婆塞、優婆夷，菩薩次佛故；若從下數，應先優婆夷，次第優婆塞、比丘尼、比丘、菩薩。今何以先說比丘，次三眾，後說菩薩？</td><td>問：如果按境界從高往低數，應該先說菩薩，其次依序是比丘、比丘尼、優婆塞、優婆夷，因為菩薩的地位僅次於佛；如果反過來從低往高數，則應該先說優婆夷，其次依序是優婆塞、比丘尼、比丘、菩薩。可是經文現在為什麼先說比丘，其次三眾，最後才說菩薩呢？</td><td class="bh4p1-guan"><b>次第設問·境界與經文的落差</b>——以「理論位階」與「經文實際排序」的矛盾發問，逗出下文層層破執的五輪答辯。</td></tr><tr><td class="bh4p1-src">答曰：菩薩雖應次佛，以諸煩惱未盡故，先說阿羅漢。諸阿羅漢智慧雖少而已成熟，諸菩薩智慧雖多而煩惱未盡，是故先說阿羅漢。佛法有二種：一、祕密，二、現示。現示中，佛、辟支佛、阿羅漢皆是福田，以其煩惱盡無餘故。祕密中，說諸菩薩得無生法忍，煩惱已斷，具六神通，利益眾生。以現示法故，前說阿羅漢，後說菩薩。復次，菩薩以方便力現入五道，受五欲，引導眾生；若在阿羅漢上，諸天、世人當生疑怪，是故後說。</td><td>答：菩薩雖然地位應僅次於佛，但因為種種煩惱尚未斷盡，所以先說阿羅漢。諸阿羅漢的智慧雖然較少，卻已經修行成熟；諸菩薩的智慧雖然廣大，煩惱卻還沒有斷盡，因此才先說阿羅漢。佛法有兩種說法方式：一是祕密說，二是現示說。就「現示」而言，佛、辟支佛、阿羅漢都是清淨的福田，因為他們的煩惱已經斷盡無餘；就「祕密」而言，則說諸菩薩已證得無生法忍，煩惱其實也已斷除，並具足六種神通，利益一切眾生。正因為依「現示」之法而說，所以先說阿羅漢、後說菩薩。又：菩薩以善巧方便之力，示現進入五道之中，領受五欲，藉此引導眾生；如果把菩薩排在阿羅漢之上，天人、世人見了會心生疑惑怪異，所以才排在後面說。</td><td class="bh4p1-guan"><b>現示／祕密二說·方便善巧</b>——以「現示」（隨順世俗煩惱已斷之相）與「祕密」（如實菩薩已斷煩惱之實）二判準，及菩薩「同流」度眾的方便力，說明排序在後並非境界貶抑，而是不壞世俗、隨順因緣的假名安立。</td></tr><tr><td class="bh4p1-src">問曰：在阿羅漢後可爾，何以乃在優婆塞、優婆夷後？</td><td>問：排在阿羅漢之後也就罷了，為什麼還要排在優婆塞、優婆夷之後呢？</td><td class="bh4p1-guan"><b>秩序之再辯</b>——追問不止於「阿羅漢之後」，更深究「何以居四眾之末」，逼顯僧俗次第安立的深層考量。</td></tr><tr><td class="bh4p1-src">答曰：四眾雖漏未盡，盡在不久故，通名聲聞眾。若於四眾中間說菩薩者，則不便。如比丘尼得無量律儀故，應次比丘後、在沙彌前；佛以儀法不便故，在沙彌後。此諸菩薩亦如是，雖應在學人三眾上，以不便故，在後說。復次，有人言：「菩薩功德、智慧超殊阿羅漢、辟支佛，是故別說。」</td><td>答：聲聞四眾雖然煩惱還沒斷盡，但為時不久便會斷盡，所以通稱為「聲聞眾」。如果在四眾當中插入菩薩來說，就會顯得不順暢。就像比丘尼雖已受持無量律儀，理應排在比丘之後、沙彌之前，但佛陀因為儀軌上的不便，仍把她排在沙彌之後。這些菩薩也是同樣的道理：雖然理應排在三眾學人之上，但因為排列上的不便，所以才排在後面說。又有人說：「菩薩的功德、智慧遠遠超過阿羅漢、辟支佛，所以才特別另外說。」</td><td class="bh4p1-guan"><b>儀軌不便·世俗秩序假立</b>——以比丘尼類比，說明排序次第依世俗僧團儀軌而安立，非關證量高下，顯示名相位次本是相待安立、可因緣調整的假名。</td></tr><tr><td class="bh4p1-src">問曰：聲聞經中但說四眾，此中何以別說菩薩眾？</td><td>問：聲聞經中通常只說比丘、比丘尼、優婆塞、優婆夷四眾，這部經為什麼要把菩薩眾另外特別列出來說呢？</td><td class="bh4p1-guan"><b>別說之形式辯</b>——由「排在何處」轉入「為何獨立列出」，開展第二層大哉問。</td></tr><tr><td class="bh4p1-src">答曰：有二種道：一、聲聞道，二、菩提薩埵道。比丘、比丘尼、優婆塞、優婆夷四眾是聲聞道，菩薩摩訶薩是菩提薩埵道。以是故聲聞法中，經初無「佛在某處某處住，爾所菩薩俱」，但言「佛某處某處住，與爾所比丘俱」。如說：「佛在波羅柰，與五比丘俱；佛在伽耶國中，與千比丘俱；佛在舍婆提，與五百比丘俱。」如是種種經初，不說與菩薩若干人俱。</td><td>答：修行的道路有兩種：一是聲聞道，二是菩提薩埵道（菩薩道）。比丘、比丘尼、優婆塞、優婆夷四眾走的是聲聞道，菩薩摩訶薩走的是菩提薩埵道。正因如此，聲聞經典開頭從來不會說「佛在某處某處安住，與若干位菩薩在一起」，而只會說「佛在某處某處安住，與若干位比丘在一起」。譬如經中常說：「佛在波羅柰，與五位比丘在一起；佛在伽耶國中，與一千位比丘在一起；佛在舍婆提，與五百位比丘在一起。」諸如此類經文開頭，從來不曾說與若干菩薩在一起。</td><td class="bh4p1-guan"><b>二道分判</b>——聲聞道與菩提薩埵道本屬兩條不同的修行軌則，經典體例各依其道立說，故菩薩須「別說」而非混入聲聞四眾之列。</td></tr><tr><td class="bh4p1-src">問曰：諸菩薩二種：若出家，若在家。在家菩薩，總說在優婆塞、優婆夷中；出家菩薩，總在比丘、比丘尼中。今何以故別說？</td><td>問：菩薩有兩種：出家的、在家的。在家菩薩理應總括在優婆塞、優婆夷之中，出家菩薩理應總括在比丘、比丘尼之中，那現在為什麼還要另外特別說呢？</td><td class="bh4p1-guan"><b>集合邏輯辯</b>——由「二道」進一步逼問「菩薩既已含攝於四眾身分之中，何須另立」，逗出集合不對等之理。</td></tr><tr><td class="bh4p1-src">答曰：雖總在四眾中，應當別說。何以故？是菩薩必墮四眾中，有四眾不墮菩薩中。何者是？有聲聞人、辟支佛人、有求生天人、有求樂自活人，此四種人不墮菩薩中。何以故？是人不發心言「我當作佛」故。復次，菩薩得無生法忍故，一切名字、生死相斷，出三界，不墮眾生數中。何以故？聲聞人得阿羅漢道，滅度已，尚不墮眾生數中，何況菩薩？</td><td>答：菩薩雖然總括在四眾的身分之中，仍然應當另外特別說明，為什麼呢？因為菩薩必定含攝在四眾之內，但四眾當中卻有人並不含攝在菩薩之內。這是什麼意思呢？四眾當中有的是聲聞人、有的是辟支佛人、有的是希求生天的人、有的是只求今生安樂自活的人，這四種人都不屬於菩薩之列，因為他們並沒有發起「我當成佛」的心願。又：菩薩因為證得無生法忍的緣故，一切名字相、生死相都已斷除，超出三界，不再墮於「眾生」之數當中。為什麼呢？聲聞人證得阿羅漢道、入滅度之後，尚且不墮於眾生之數，何況是菩薩呢？</td><td class="bh4p1-guan"><b>集合不對等·超越生死數</b>——菩薩雖屬四眾之集合子項，卻因發菩提心、證無生忍而超出「眾生數」，形成「含攝而又超越」的不對等關係，故不能簡單併入四眾統稱，必須別說。</td></tr><tr><td class="bh4p1-src">如《波羅延》優波尸難中偈說：「已滅無處更出不？若已永滅不出不？既入涅槃常住不？惟願大智說其實！」</td><td>正如《波羅延經》優波尸難品中的偈頌所問：「已經寂滅的人，是不是還有處所可以再出現？如果已經永遠寂滅，是不是就不再出現？既然已經進入涅槃，是不是就常住不變？懇請大智慧的佛陀，為我說明其中真實之義！」</td><td class="bh4p1-guan"><b>涅槃有無之難·四句詰問</b>——優波尸以「更出／不出／常住」等四句設問逼問涅槃寂滅後的實相，正是後世中觀「離四句」論式的先聲。</td></tr><tr><td class="bh4p1-src">佛答曰：「滅者即是不可量，破壞因緣及名相，一切言語道已過，一時都盡如火滅。」</td><td>佛陀回答說：「寂滅的境界是無法用任何尺度去衡量的，它已經破除了一切因緣和合的假名與相狀；一切語言文字所能表述的途徑都已經超越，就如同一把火燒盡之後，一切在同一時間裡完全止息。」</td><td class="bh4p1-guan"><b>言語道斷·如火滅喻</b>——佛陀直說涅槃寂滅超越因緣名相、超越一切言說思議，以「薪盡火滅」喻顯其不可以「有」「無」等世俗概念度量，正是「言語道斷、心行處滅」的中觀極致。</td></tr><tr><td class="bh4p1-src">如阿羅漢一切名字尚斷，何況菩薩能破一切諸法、知實相、得法身而不斷耶！以是故，摩訶衍四眾中別說菩薩。</td><td>既然連阿羅漢都能斷除一切名字之相，更何況是菩薩——菩薩能破除一切法的執著、通達諸法實相、證得法身而相續不斷呢！正因為如此，大乘經典的四眾之中，才要把菩薩特別另外標舉出來說。</td><td class="bh4p1-guan"><b>法身不斷·別說之究竟理由</b>——阿羅漢斷名字而入寂滅，菩薩則破法證實相、得法身而妙用不斷，此不斷之德正是別說菩薩的終極（本體層面）理由，呼應本品標題「菩薩殿後又別說」的雙重詰問。</td></tr></tbody></table><p class="bh4p1-note">卷四第1品，龍樹菩薩以五輪問答層層辨析菩薩「何以殿後、何以別說」二大哉問：前三輪從現示／祕密、僧團儀軌、二道分判等前邏輯理由說明排序與別說之因，第四輪以集合不對等（菩薩含攝於四眾而又超越眾生數）深化，第五輪引《波羅延》偈頌，以「言語道斷、如火滅」對顯阿羅漢寂滅與菩薩法身不斷，終結於「摩訶衍四眾中別說菩薩」的究竟理由。白話忠於原意、不增不減。</p></div></div>
+<script id="wy-bh4p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh4p1Btn"),BOX=document.getElementById("bh4p1Box"),MODAL=document.getElementById("bh4p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function place(){var z=document.getElementById("c4p1Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh4p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH4P1:END-->
 </body></html>
