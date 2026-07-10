@@ -2626,56 +2626,6 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH4P8:END-->
-<!--WY-C4TOCBH:BEGIN-->
-<style id="wy-c4tocbh-css">
-.toc-bh{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:14px;cursor:pointer;background:linear-gradient(135deg,#4a5a68,#2b3742);color:#eef4fa;font-family:"Noto Sans TC",sans-serif;font-size:12px;letter-spacing:1px;font-weight:600;line-height:1.25;white-space:nowrap;box-shadow:0 1px 4px rgba(43,55,66,.4);border:1px solid rgba(180,205,225,.28);user-select:none;transition:filter .2s,transform .2s,box-shadow .2s;}
-.toc-bh:hover{filter:brightness(1.12);transform:translateY(-1px);box-shadow:0 4px 12px rgba(43,55,66,.5);}
-.toc-bh:focus-visible{outline:2px solid #7f9cb5;outline-offset:2px;}
-.toc-bh .bh-ic{font-size:11px;line-height:1;}
-@media(max-width:520px){.toc-bh{padding:4px 10px;letter-spacing:.3px;}}
-</style>
-<script id="wy-c4tocbh-js">(function(){
-function nOf(card){var m=(card.getAttribute("data-target")||"").match(/pin-(\d+)/);return m?m[1]:null;}
-function mkpill(n){
-  var bh=document.createElement("span");bh.className="toc-bh";bh.setAttribute("data-bh",n);
-  bh.setAttribute("role","button");bh.setAttribute("tabindex","0");
-  bh.setAttribute("aria-label","第"+n+"品 白話翻譯表");bh.title="本品白話翻譯表";
-  bh.innerHTML="<span class=\"bh-ic\">\u8b6f</span>白話";
-  return bh;
-}
-function build(){
-  var cards=document.querySelectorAll("div.toc-card");
-  for(var i=0;i<cards.length;i++){
-    var card=cards[i];
-    var n=nOf(card);if(!n)continue;
-    var act=card.querySelector(".toc-actions");
-    if(act){
-      if(act.querySelector(".toc-bh"))continue;
-      act.insertBefore(mkpill(n), act.firstChild); /* 白話排最左：白話｜總表｜影音 */
-    }else{
-      if(card.querySelector(".toc-bh"))continue;
-      var a2=document.createElement("div");a2.className="toc-actions";
-      a2.appendChild(mkpill(n));
-      var vid=card.querySelector(".toc-yt");if(vid){a2.appendChild(vid);}
-      card.appendChild(a2);
-    }
-  }
-}
-function openBH(n){var m=document.getElementById("bh4p"+n+"Modal");if(m){m.classList.add("open");}else{location.hash="#pin-"+n;}}
-document.addEventListener("click",function(e){
-  var b=(e.target&&e.target.closest)?e.target.closest(".toc-bh"):null;if(!b)return;
-  e.preventDefault();e.stopPropagation();openBH(b.getAttribute("data-bh"));
-},true);
-document.addEventListener("keydown",function(e){
-  if(e.key!=="Enter"&&e.key!==" ")return;
-  var b=(e.target&&e.target.closest)?e.target.closest(".toc-bh"):null;if(!b)return;
-  e.preventDefault();openBH(b.getAttribute("data-bh"));
-});
-build();
-if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",build);
-var c=0,iv=setInterval(function(){build();if(++c>24)clearInterval(iv);},250);
-})();</script>
-<!--WY-C4TOCBH:END-->
 <!--WY-BH4P9:BEGIN-->
 <style id="wy-bh4p9-css">\n.bh4p9-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}\n.bh4p9-fabbox.show{display:block;}\n.bh4p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}\n.bh4p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}\n.bh4p9-ic{font-size:15px;line-height:1;color:#bcd4ea;}\n.bh4p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}\n.bh4p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}\n.bh4p9-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}\n.bh4p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}\n.bh4p9-modal.open{display:flex;}\n.bh4p9-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}\n.bh4p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}\n.bh4p9-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}\n.bh4p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}\n.bh4p9-close:hover{background:#dde2e6;}\n.bh4p9-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}\n.bh4p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}\n.bh4p9-tbl th,.bh4p9-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}\n.bh4p9-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}\n.bh4p9-tbl thead th:nth-child(1){width:32%;}.bh4p9-tbl thead th:nth-child(2){width:41%;}.bh4p9-tbl thead th:nth-child(3){width:27%;}\n.bh4p9-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}\n.bh4p9-guan{background:#eef2f5;color:#37505f;}\n.bh4p9-tbl tbody tr:nth-child(even) td{background:#faf6ee;}\n.bh4p9-tbl tbody tr:nth-child(even) td.bh4p9-guan{background:#e8eef2;}\n.bh4p9-tbl b{color:#8b2500;}\n.bh4p9-guan b{color:#2f6b5a;}\n.bh4p9-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}\n.bh4p9-note b{color:#8b2500;}\n@media(max-width:900px){.bh4p9-fabbox{right:14px;}.bh4p9-tbl{font-size:11px;}.bh4p9-card{padding:22px 12px 14px;}}\n</style>
 <div class="bh4p9-fabbox" id="bh4p9Box"><button class="bh4p9-btn" id="bh4p9Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh4p9-ic">譯</span><span class="bh4p9-ls"><span class="bh4p9-l1">本品 · 原文·白話·中觀</span><span class="bh4p9-l2">白話翻譯表</span></span></button></div><div class="bh4p9-modal" id="bh4p9Modal" role="dialog" aria-modal="true"><div class="bh4p9-card"><button class="bh4p9-close" id="bh4p9Close" type="button" aria-label="關閉">×</button><h3>卷四 · 第9品 白話翻譯表（三十二大人相）</h3><p class="sub">《大智度論》卷四第9品·相師應王問·詳陳菩薩三十二大人相 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh4p9-tbl"><caption>三十二大人相 · 原文｜白話翻譯｜中觀概念（共40段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh4p9-src">王言：「何等三十二相？」相師答言：</td><td>國王問道：「究竟是哪三十二種大人相？」眾相師便逐一回答：</td><td class="bh4p9-guan"><b>全品導言·王問起問，相師應答統攝全篇</b>——以下三十二段乃相師順應國王之問、從足底至頂髻依序陳述的完整應答，讀者宜將其視為一氣呵成的整體敘述，而非各自獨立的零散條目；此開場亦點出「相好」自始便是為了回答「此子究竟是凡是聖」的疑問而被陳說出來的。</td></tr><tr><td class="bh4p9-src">一者、足下安平立相：足下一切著地，間無所受，不容一針。</td><td>第一，足下安平立相：雙足踏地時整個足底完全貼合地面，中間沒有絲毫縫隙，連一根針都容納不下。</td><td class="bh4p9-guan"><b>持戒不動所感·果報如地之平正</b>——傳統相解以為此相緣於因地持戒堅固、心不動搖，如大地般安穩承載一切而不傾側；足底與地密合無間，恰是「因地踏實、果地平正」的具體寫照，說明看似瑣細的身相，實則是無量劫因行如實積累的外顯，非偶然而有。</td></tr><tr><td class="bh4p9-src">二者、足下二輪相：千輻輞轂，三事具足，自然成就，不待人工。諸天工師毘首羯磨，不能化作如是妙相。</td><td>第二，足下二輪相：足心呈現千輻輪的形狀，輪輞、輪轂等部件齊備，這是自然而然成就的，並非仰賴人工雕琢；就連諸天中最擅長工巧的毘首羯磨天神，也無法造作出如此殊妙的相好。</td><td class="bh4p9-guan"><b>業感非工巧所能造·因深果妙</b>——輪相之妙超越一切天工造作的極限，說明此相並非任何有為技術所能企及，而是無量劫善業因緣自然感召的果報；「不待人工」四字正凸顯業感緣起中「因不可僭越」的法則，任何巧匠之力都無法替代累劫修行的深度。</td></tr><tr><td class="bh4p9-src">何以故不能？</td><td>問曰：為什麼連毘首羯磨也無法造作呢？</td><td class="bh4p9-guan"><b>一世智與無量劫智的因果對應</b>——此問直探「工巧」與「業感」之別，逼顯出下文答語所要說明的核心：果報的殊勝程度必然對應因地修行時間與深度的差異。</td></tr><tr><td class="bh4p9-src">是毘首羯磨諸天工師，不隱沒智慧；是輪相善業報。是天工師生報得智慧；是輪相行善根智慧得。是毘首羯磨一世得是智慧；是輪相從無量劫智慧生。以是故，毘首羯磨不能化作，何況餘工師？</td><td>答曰：毘首羯磨這位天工師的智慧，並非徹底無漏、究竟顯露的智慧，只是隨業受生（生報）而得的智慧；而輪相卻是修行善根、積聚智慧才感得的果報。這位天工師的智慧僅在一世受生中獲得，輪相卻是從無量劫的修行智慧中出生。因此，連毘首羯磨都無法造作，何況其餘的工匠呢？</td><td class="bh4p9-guan"><b>果報層級不可僭越·短暫技巧無法替代累劫修行</b>——此答精確區分「一世受生的有限智慧」與「無量劫累積的修行智慧」兩種層級，說明技藝與福德本屬不同範疇，技藝再精妙也無法僭越累劫修行所感的果報，呼應業感緣起中因果各有其位、不容混淆的鐵律。</td></tr><tr><td class="bh4p9-src">三者、長指相：指纖長端直，次第𦟛好，指節參差。</td><td>第三，長指相：手指纖細修長、端正挺直，依次序漸次豐潤美好，指節分明有致。</td><td class="bh4p9-guan"><b>恭敬離慢所感</b>——傳統相解謂此相緣於因地恭敬師長、破除憍慢而修得，指相修長端直正對應內心謙下柔軟、不生我慢的長期薰習，顯示身相莊嚴其實是心地調柔的外部投影。</td></tr><tr><td class="bh4p9-src">四者、足跟廣平相。</td><td>第四，足跟廣平相：足跟寬廣平坦，穩固端正。</td><td class="bh4p9-guan"><b>持戒安眾所感</b>——足跟為立身之根本，寬廣平坦象徵因地持戒清淨、令眾生得安穩依止；此相雖僅一句帶過，卻與首相「足下安平」前後呼應，共同構成「立身之本先由戒善奠定」的整體意象。</td></tr><tr><td class="bh4p9-src">五者、手足指縵網相：如鴈王張指則現，不張則不現。</td><td>第五，手足指縵網相：手指、足趾之間有如絲縵般的薄膜相連，就像鴈王展翅張開手指時才會顯現，不張開時便隱而不見。</td><td class="bh4p9-guan"><b>四攝法攝眾不令離散</b>——縵網相譬喻菩薩以布施、愛語、利行、同事四攝法攝受眾生，使眾生如指間相連而不離散；「張則現、不張則不現」也隱含「相用因緣而顯」的道理——功德之相並非恆常凸顯的固定物，而是隨因緣運用而彰顯的作用相。</td></tr><tr><td class="bh4p9-src">六者、手足柔軟相：如細劫波毳，勝餘身分。</td><td>第六，手足柔軟相：手足柔軟細膩，猶如極細緻的劫波毳（一種細軟棉絮），勝過身體其餘部位。</td><td class="bh4p9-guan"><b>慈心軟語所感</b>——手足柔軟象徵因地以慈悲柔軟之心對待眾生、常行軟語安慰病苦，內在的柔和心行外顯為身觸的柔軟，說明「相好」的莊嚴並非只在視覺上莊嚴，觸覺層面同樣是心行的延伸與印證。</td></tr><tr><td class="bh4p9-src">七者、足趺高滿相：以足蹈地，不廣不狹。足下色如赤蓮華，足指間網及足邊色如真珊瑚，指爪如淨赤銅，足趺上真金色，足趺上毛青毘琉璃色。其足嚴好，譬如雜寶屐，種種莊飾。</td><td>第七，足趺高滿相：舉足踏地時，足印不寬不窄、恰到好處。足底顏色如同紅蓮花，足趾間的縵網與足邊的顏色如同真珊瑚，指甲如同純淨的赤銅，足背呈現真金之色，足背上的細毛則呈現青琉璃色。整隻腳莊嚴美好，猶如用各種珍寶鑲嵌裝飾而成的鞋履。</td><td class="bh4p9-guan"><b>精進利他所感·眾寶莊嚴喻多因所成</b>——此相以蓮華、珊瑚、赤銅、真金、青琉璃五種寶色層層描繪，象徵此一相好並非單一善因所感，而是精進不退、廣益眾生等多種功德因緣交織成就；「雜寶屐」的譬喻正說明莊嚴身相乃眾多福德因緣和合所現，非有一恆常不變的「莊嚴自性」獨立存在。</td></tr><tr><td class="bh4p9-src">八者、伊泥延𨄔相：如伊泥延鹿𨄔，隨次𦟛纖。</td><td>第八，伊泥延腨相：小腿肚如同伊泥延鹿的腿一般，依次序漸漸纖細勻稱。</td><td class="bh4p9-guan"><b>聞法勤修不生疲厭所感</b>——伊泥延鹿以行動輕捷靈巧著稱，此相譬喻因地聞法精勤、修行不生疲厭懈怠之心，身形的輕巧勻稱正是內心精進不懈的外部映現。</td></tr><tr><td class="bh4p9-src">九者、正立手摩膝相：不俯不仰，以掌摩膝。</td><td>第九，正立手摩膝相：身體端正站立，既不前俯也不後仰，兩手垂下時掌心便能撫觸到膝蓋。</td><td class="bh4p9-guan"><b>慈悲柔和攝眾所感</b>——身形端正無有俯仰之偏，手臂垂下自然及膝，象徵因地以慈悲柔和之心攝受眾生、不偏不倚，中正之相即是中道之心的外顯。</td></tr><tr><td class="bh4p9-src">十者、陰藏相：譬如調善象寶、馬寶。</td><td>第十，陰藏相：如同調伏善順的象寶、馬寶一般（隱密自然，無有顯露之過）。</td><td class="bh4p9-guan"><b>遠離邪淫斷除欲染所感</b>——此相緣於因地遠離邪淫、斷除欲染煩惱，以象寶、馬寶為喻，說明清淨戒行所感得的果報，是身形本身的自然清淨，而非刻意遮掩的造作之相。</td></tr><tr><td class="bh4p9-src">若菩薩得阿耨多羅三藐三菩提時，諸弟子何因緣見陰藏相？</td><td>問曰：若菩薩成就無上正等正覺之時，諸弟子又是以什麼因緣得以見到陰藏相呢？</td><td class="bh4p9-guan"><b>隱密之相何以能見·度眾方便的提問</b>——此問切中要害：既然此相性質隱密難顯，為何弟子仍能得見？逼顯出下文「示現」與「化現」二說，說明相好之顯現全繫於度眾因緣，而非固定不變的物理事實。</td></tr><tr><td class="bh4p9-src">為度眾人決眾疑故，示陰藏相。復有人言：「佛化作馬寶、象寶，示諸弟子言：『我陰藏相亦如是。』」</td><td>答曰：是為了度化眾人、解除大眾心中的疑惑，才示現陰藏相。另有一種說法認為：佛化現出馬寶、象寶，並告訴諸弟子說：「我的陰藏相就如同這樣。」</td><td class="bh4p9-guan"><b>相為度生方便·不執實有一相</b>——兩種解答（親自示現／化現寶物為喻）並存而不強求統一，正說明「相」的顯現終究是為了「決眾疑」的度生方便，並非執著於必須有一個固定、實有的物理形態才算數，體現大乘「相隨用轉、不著定相」的善巧。</td></tr><tr><td class="bh4p9-src">十一者、身廣長等相：如尼拘盧陀樹，菩薩身齊為中，四邊量等。</td><td>第十一，身廣長等相：身形如同尼拘盧陀樹一般，菩薩以自身為中心，上下左右四邊的長度分毫相等。</td><td class="bh4p9-guan"><b>身量周正無偏·中道之相</b>——尼拘盧陀樹枝葉四向均衡舒展，以此喻身，身高與雙臂展開之寬恰好相等，象徵不偏不倚、周遍均衡的中道之相，亦暗合中觀不落一邊、圓滿無缺的義理。</td></tr><tr><td class="bh4p9-src">十二者、毛上向相：身有諸毛，生皆上向而穉。</td><td>第十二，毛上向相：全身所生的毛髮，全都朝上生長，且柔嫩美好。</td><td class="bh4p9-guan"><b>常行善法·善根增上所感</b>——毛髮上向而生，象徵因地常行善法，令一切善根念念增上、不曾退轉；身相細節雖微小，卻無一不與心行的方向性相呼應——心念嚮善，身相亦隨之朝上而顯。</td></tr><tr><td class="bh4p9-src">十三者、一一孔一毛生相：毛不亂，青瑠璃色，毛右靡上向。</td><td>第十三，一一孔一毛生相：每一個毛孔只生出一根毛髮，毛髮不雜亂糾結，呈現青琉璃般的顏色，且毛髮皆向右旋而朝上。</td><td class="bh4p9-guan"><b>如實語不誑眾生所感</b>——「一孔一毛」井然有序、不相雜亂，象徵因地言語真實、不誑惑眾生，語業清淨如毛髮之整齊不亂；毛髮右旋朝上，亦與後文「白毫右旋」相呼應，形成貫穿全品的右旋意象。</td></tr><tr><td class="bh4p9-src">十四者、金色相：</td><td>第十四，金色相：</td><td class="bh4p9-guan"><b>導入金色相·下文以層層對比說明</b>——僅先標舉相名，隨即由下文問答以層層遞進的對比方式展開說明，顯示此相之殊勝需以「層層超越」的敘事手法方能彰顯，非一語所能道盡。</td></tr><tr><td class="bh4p9-src">何等金色？</td><td>問曰：什麼樣的顏色才叫做金色相呢？</td><td class="bh4p9-guan"><b>追問殊勝相狀的具體內涵</b>——此問要求將抽象的「金色」具體量化為可比較的層級，逼出下文一連串層層超越的譬喻。</td></tr><tr><td class="bh4p9-src">若鐵在金邊則不現，今現在金比佛在時金則不現，佛在時金比閻浮那金則不現，閻浮那金比大海中轉輪聖王道中金沙則不現，金沙比金山則不現，金山比須彌山則不現，須彌山金比三十三諸天瓔珞金則不現，三十三諸天瓔珞金比焰摩天金則不現，焰摩天金比兜率陀天金則不現，兜率陀天金比化自在天金則不現，化自在天金比他化自在天金則不現，他化自在天金比菩薩身色則不現。如是色，是名金色相。</td><td>答曰：如果將鐵放在金子旁邊，鐵的顏色便黯然不顯；如今世間現有的金子，放在佛住世時的金子旁邊便不顯；佛住世時的金子，放在閻浮那金旁邊便不顯；閻浮那金放在大海中轉輪聖王道上的金沙旁邊便不顯；金沙放在金山旁邊便不顯；金山放在須彌山旁邊便不顯；須彌山的金色放在三十三天瓔珞之金旁邊便不顯；三十三天瓔珞金放在焰摩天金旁邊便不顯；焰摩天金放在兜率陀天金旁邊便不顯；兜率陀天金放在化自在天金旁邊便不顯；化自在天金放在他化自在天金旁邊便不顯；他化自在天金放在菩薩身色旁邊，也一樣黯然不顯。像這樣層層超越、無有能及的顏色，就叫做金色相。</td><td class="bh4p9-guan"><b>層層對比顯殊勝·無有一法可與相比</b>——以十二層由粗至精、由人間至諸天的黃金層層對比，逐步推向「無有能及」的極致，這種「層層遮遣」的敘事結構恰與中觀「遮詮」的論證方式相通：不直接定義金色相「是什麼」，而是不斷排除「不是什麼」（不是鐵、不是人間金、不是諸天金……），最終逼顯出無可比擬的殊勝，暗合以否定層層逼近究竟的論理手法。</td></tr><tr><td class="bh4p9-src">十五者、丈光相：四邊皆有一丈光，佛在是光中端嚴第一，如諸天諸王寶光明淨。</td><td>第十五，丈光相：佛身四周皆有一丈光明環繞，佛便安住在這光明之中，顯得莊嚴端正、無與倫比，猶如諸天諸王身上的寶光一般明淨。</td><td class="bh4p9-guan"><b>志求佛道決定不移所感</b>——身光常隨、四邊環繞，象徵因地志求佛道之心堅定不移、光明相續不曾間斷；「端嚴第一」也暗示此光並非外加的裝飾，而是內在功德自然透顯、如影隨形的果報之相。</td></tr><tr><td class="bh4p9-src">十六者、細薄皮相：塵土不著身，如蓮華葉不受塵水。若菩薩在乾土山中經行，土不著足；隨藍風來，吹破土山令散為塵，乃至一塵不著佛身。</td><td>第十六，細薄皮相：皮膚細膩薄潤，塵土沾染不上身體，就如同蓮花葉不沾染塵水一般。若菩薩在乾燥的土山中行走，塵土也沾不上腳；即使隨藍風吹來，將土山吹散化為飛塵，也沒有一粒塵埃能沾附在佛的身上。</td><td class="bh4p9-guan"><b>常樂問法、柔軟供養所感·塵不染身喻煩惱不染心</b>——皮膚細薄、纖塵不染，除了譬喻因地常以柔軟心供養法師、樂於請法之外，「塵不著身」更是絕佳的象徵：外在塵土沾染不上身體，恰如內在煩惱塵垢沾染不上清淨之心，身相之淨與心地之淨在此完全對應。</td></tr><tr><td class="bh4p9-src">十七者、七處隆滿相：兩手、兩足、兩肩、項中，七處皆隆滿端正，色淨勝餘身體。</td><td>第十七，七處隆滿相：兩手、兩足、兩肩以及頸項，這七個部位都豐滿端正，顏色清淨勝過身體其餘部分。</td><td class="bh4p9-guan"><b>等心行施所感</b>——七處均等豐滿，象徵因地以平等心廣行布施、不偏私厚薄，果報上便顯現為身體各處均衡豐滿、無有偏枯之處，平等的心行落實為平等的身相。</td></tr><tr><td class="bh4p9-src">十八者、兩腋下隆滿相：不高不深。</td><td>第十八，兩腋下隆滿相：兩腋下豐滿平整，不高聳也不凹陷。</td><td class="bh4p9-guan"><b>濟眾病苦所感</b>——腋下豐滿無有凹陷，傳統相解謂緣於因地以醫藥飲食濟助眾生病苦，果報使身形各處皆無虧缺之處，延續上一相「等心行施」而更著重於濟度病苦眾生的具體善行。</td></tr><tr><td class="bh4p9-src">十九者、上身如師子相。</td><td>第十九，上身如師子相：上半身如同獅子一般威嚴挺拔。</td><td class="bh4p9-guan"><b>無恚無害所感</b>——獅子為獸中之王，威而不猛、氣象莊嚴，此相緣於因地對一切眾生無瞋恚、無傷害之心，內心的無畏坦蕩自然顯現為身形上的莊嚴氣度，而非外露的兇猛之相。</td></tr><tr><td class="bh4p9-src">二十者、大直身相：於一切人中身最大而直。</td><td>第二十，大直身相：在一切人當中，身形最為高大且挺直端正。</td><td class="bh4p9-guan"><b>遠離憍慢、善順教誨所感</b>——身形高大挺直卻不與「憍慢自大」混同，傳統相解正謂此相緣於因地遠離憍慢、善於順從教誨；外表的挺拔與內心的謙下並不矛盾，恰恰是「愈謙下、愈莊嚴」的體現。</td></tr><tr><td class="bh4p9-src">二十一者、肩圓好相：一切治肩無如是者。</td><td>第二十一，肩圓好相：兩肩圓滿美好，世間一切修飾肩部的技藝，都無法達到這樣的境界。</td><td class="bh4p9-guan"><b>常修四攝攝取眾生所感</b>——肩為擔負之處，圓滿美好象徵因地常以布施、愛語、利行、同事四攝法承擔攝受眾生的重任，「一切治肩無如是者」也再次呼應「業感非工巧所能造」的貫穿主題。</td></tr><tr><td class="bh4p9-src">二十二者、四十齒相：不多不少，餘人三十二齒，身三百餘骨，頭骨有九；菩薩四十齒，頭有一骨。菩薩齒骨多，頭骨少；餘人齒骨少，頭骨多。以是故，異於餘人身。</td><td>第二十二，四十齒相：不多不少剛好四十顆牙齒。一般人只有三十二顆牙齒，全身有三百多塊骨頭，頭骨則有九塊；而菩薩有四十顆牙齒，頭骨卻只有一塊。菩薩的齒骨較多、頭骨較少，一般人則齒骨較少、頭骨較多，因此菩薩之身與一般人有所不同。</td><td class="bh4p9-guan"><b>遠離兩舌惡口、常修慈心平等所感</b>——齒骨多寡與頭骨多寡呈現此消彼長的對比結構，傳統相解謂此相緣於因地遠離兩舌、惡口，常以平等慈心待人；牙齒（語業所依）增多而頭骨（單一渾然）減少，隱然對應「語業廣度眾生、而心念渾然一味」的內在結構。</td></tr><tr><td class="bh4p9-src">二十三者、齒齊相：諸齒等，無麁無細，不出不入。齒密相，人不知者，謂為一齒，齒間不容一毫。</td><td>第二十三，齒齊相：所有牙齒大小相等，不粗不細，排列整齊不外凸也不內縮。牙齒緊密相連，不知情的人甚至會誤以為只有一顆牙齒，齒縫之間連一根毫毛都容納不下。</td><td class="bh4p9-guan"><b>十善業道自淨淨他所感</b>——牙齒排列整齊緊密到令人誤認為一體，象徵因地奉行十善業道、自淨其意又能淨化他人，內外一致、表裡如一的修行，感得外相上渾然齊整、彷彿一體無別的果報。</td></tr><tr><td class="bh4p9-src">二十四者、牙白相：乃至勝雪山王光。</td><td>第二十四，牙白相：牙齒潔白光亮，甚至勝過雪山之王所發出的光芒。</td><td class="bh4p9-guan"><b>常修慈心所感</b>——牙齒潔白超越雪山之光，傳統相解謂緣於因地常修慈心、心地皎潔無染，內心的清淨光明外顯為齒相之潔白勝雪，說明「白」在此不僅是顏色，更是清淨心行的具體投影。</td></tr><tr><td class="bh4p9-src">二十五者、師子頰相：如師子獸中王平廣頰。</td><td>第二十五，師子頰相：兩頰如同獸中之王獅子一般，平坦而寬廣。</td><td class="bh4p9-guan"><b>一切善法圓滿不缺所感</b>——獅子頰形平廣飽滿，無有缺損凹陷，象徵因地所修一切善法圓滿具足、無有缺漏，臉頰的豐盈平廣正是內在功德無有欠缺的外部寫照。</td></tr><tr><td class="bh4p9-src">二十六者、味中得上味相：有人言：佛以食著口中，是一切食皆作最上味。何以故？是一切食中有最上味因故。無是相人，不能發其因故，不得最上味。復有人言：若菩薩舉食著口中，是時咽喉邊兩處流注甘露，和合諸味，是味清淨故，名味中得上味。</td><td>第二十六，味中得上味相：有一種說法認為，凡是佛所食用的食物，一經入口便都化為最上等的美味。為什麼呢？因為一切食物之中原本就潛藏著能成為最上味的因，只是沒有這種相好的人，無法引發出這個因，所以嚐不到最上美味。另有一種說法認為，若菩薩將食物舉起放入口中，這時咽喉兩側便會流注出甘露，與食物調和融合，這味道清淨無染，因此稱為「味中得上味」。</td><td class="bh4p9-guan"><b>大悲潤益眾生所感·因緣具足方能顯發</b>——兩種解說並存：一說「一切食中本具最上味因，唯有相好者能發之」，一說「甘露內生、和合諸味」，二者共同的核心是「最上味」並非食物本身固有不變的屬性，而是「因＋緣」和合具足才能顯發的作用，恰好印證緣起法「無有一法能單獨成就其自身」的道理。</td></tr><tr><td class="bh4p9-src">二十七者、大舌相：是菩薩大舌從口中出，覆一切面分，乃至髮際；若還入口，口亦不滿。</td><td>第二十七，大舌相：菩薩若將廣長的舌頭從口中伸出，能夠覆蓋整個臉面，直至髮際線；而收回舌頭放入口中時，卻絲毫不感覺口中滿脹。</td><td class="bh4p9-guan"><b>不妄語、不惡口所感</b>——廣長舌相自古即以「能覆面至髮際」象徵此人生生世世不妄語、言無虛誑，能大能小、伸縮自如而口不覺滿，也隱喻真實語的力量廣大周遍卻又收放自如、毫無滯礙。</td></tr><tr><td class="bh4p9-src">二十八者、梵聲相：如梵天王五種聲從口出：其一、深如雷；二、清徹遠聞，聞者悅樂；三、入心敬愛；四、諦了易解；五、聽者無厭。菩薩音聲亦如是，五種聲從口中出迦陵毘伽聲相，如迦陵毘伽鳥聲可愛；鼓聲相，如大鼓音深遠。</td><td>第二十八，梵聲相：如同梵天王從口中發出的五種聲音：第一種聲音深沉如雷鳴；第二種清澈悠遠、傳達得很遠，聽聞者都心生喜悅快樂；第三種能深入人心、令人生起敬愛之情；第四種道理明白透徹、容易理解；第五種是聽者聽了不會生起厭倦之心。菩薩的音聲也是如此，同樣具足這五種聲音——其中如迦陵頻伽鳥鳴般悅耳可愛的聲相，以及如大鼓之音般深沉悠遠的聲相。</td><td class="bh4p9-guan"><b>誠實柔和語業所感</b>——梵音五德以「深、遠、悅、易解、無厭」層層鋪陳語業之圓滿，正對應因地常說誠實語、柔軟語、饒益語；聲音雖是剎那生滅、無有實體的振動，卻能承載如此深廣的度眾功德，恰是「性空而用不空」的具體例證。</td></tr><tr><td class="bh4p9-src">二十九者、真青眼相：如好青蓮華。</td><td>第二十九，真青眼相：眼睛呈現純淨的青色，猶如美好的青蓮花一般。</td><td class="bh4p9-guan"><b>慈眼視眾生所感</b>——眼為觀照之門，青蓮花色清涼潤澤，象徵因地以慈悲之眼平等觀視一切眾生，不起憎愛分別，內在的慈心透過眼相的清涼色澤具體呈現出來。</td></tr><tr><td class="bh4p9-src">三十者、牛眼睫相：如牛王眼睫，長好不亂。</td><td>第三十，牛眼睫相：睫毛如同牛王的眼睫一般，修長美好而不雜亂。</td><td class="bh4p9-guan"><b>視眾生如子所感</b>——牛王目光溫馴而專注，睫毛修長不亂，象徵因地視一切眾生猶如己出、目光專注而不散亂輕慢，眼神的安定與睫毛的整齊互為表裡。</td></tr><tr><td class="bh4p9-src">三十一者、頂髻相：菩薩有骨髻，如拳等在頂上。</td><td>第三十一，頂髻相：菩薩頭頂有隆起的骨髻，形狀如同拳頭一般大小，端立於頭頂之上。</td><td class="bh4p9-guan"><b>為眾生尊為導所感</b>——頂骨隆起如髻，居於全身最高處，象徵因地於一切眾生中堪為尊、堪為導，德行高於眾表；此相亦與末相「白毫」同居頭部至高之處，共同構成全品收束於「頂」的意象。</td></tr><tr><td class="bh4p9-src">三十二者、白毛相：白毛眉間生，不高不下，白淨右旋，舒長五尺。</td><td>第三十二，白毛相：兩眉之間生有白色毫毛，位置不高不低恰到好處，色澤潔白清淨且向右旋轉盤繞，若舒展開來長達五尺。</td><td class="bh4p9-guan"><b>如實觀照一切所感·右旋歸於一處</b>——白毫居於兩眼之間，象徵因地以如實智慧觀照一切法，不生顛倒；「右旋」呼應第十三相「毛右靡上向」，全身毛髮之旋轉方向前後相貫，暗示三十二相並非各自孤立的三十二件事，而是同一因地修行從足至頂層層開展、首尾相應的完整整體。</td></tr><tr><td class="bh4p9-src">相師言：地天太子三十二大人相如是，菩薩具有此相。</td><td>眾相師總結說道：如天神一般尊貴的太子，確實具足以上三十二種大人相，這位菩薩確實圓滿具備此相。</td><td class="bh4p9-guan"><b>全品收束·三十二相首尾相應</b>——相師之言為全品作結，呼應開篇「王言：何等三十二相」之問，首尾相應、圓滿收攝；三十二相由足至頂逐一鋪陳，看似列舉外相，實則每一相皆對應一項因地功德，全篇正以「相好莊嚴」示現「因果不虛、緣起有相」的中觀要義——相非無因而現，亦非恆常獨存，而是無量因緣和合示現的莊嚴果報。</td></tr></tbody></table><p class="bh4p9-note">卷四第9品，敘國王問相師「何等三十二相」，相師依序陳說菩薩三十二大人相——自足下安平立相以至頂髻、白毛相，逐相描述形貌，並穿插三段問答闡明輪相非工巧所能造、陰藏相為度眾示現、金色相層層無有能及。白話忠於原意、不增不減。　中觀關鍵詞：全品導言·王問起問相師應答統攝全篇　業感非工巧所能造·因深果妙　層層對比顯殊勝·無有一法可與相比　塵不染身喻煩惱不染心　全品收束·三十二相首尾相應</p></div></div>
@@ -2733,4 +2683,54 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH4P11:END-->
+<!--WY-C4TOCBH:BEGIN-->
+<style id="wy-c4tocbh-css">
+.toc-bh{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:14px;cursor:pointer;background:linear-gradient(135deg,#4a5a68,#2b3742);color:#eef4fa;font-family:"Noto Sans TC",sans-serif;font-size:12px;letter-spacing:1px;font-weight:600;line-height:1.25;white-space:nowrap;box-shadow:0 1px 4px rgba(43,55,66,.4);border:1px solid rgba(180,205,225,.28);user-select:none;transition:filter .2s,transform .2s,box-shadow .2s;}
+.toc-bh:hover{filter:brightness(1.12);transform:translateY(-1px);box-shadow:0 4px 12px rgba(43,55,66,.5);}
+.toc-bh:focus-visible{outline:2px solid #7f9cb5;outline-offset:2px;}
+.toc-bh .bh-ic{font-size:11px;line-height:1;}
+@media(max-width:520px){.toc-bh{padding:4px 10px;letter-spacing:.3px;}}
+</style>
+<script id="wy-c4tocbh-js">(function(){
+function nOf(card){var m=(card.getAttribute("data-target")||"").match(/pin-(\d+)/);return m?m[1]:null;}
+function mkpill(n){
+  var bh=document.createElement("span");bh.className="toc-bh";bh.setAttribute("data-bh",n);
+  bh.setAttribute("role","button");bh.setAttribute("tabindex","0");
+  bh.setAttribute("aria-label","第"+n+"品 白話翻譯表");bh.title="本品白話翻譯表";
+  bh.innerHTML="<span class=\"bh-ic\">\u8b6f</span>白話";
+  return bh;
+}
+function build(){
+  var cards=document.querySelectorAll("div.toc-card");
+  for(var i=0;i<cards.length;i++){
+    var card=cards[i];
+    var n=nOf(card);if(!n)continue;
+    var act=card.querySelector(".toc-actions");
+    if(act){
+      if(act.querySelector(".toc-bh"))continue;
+      act.insertBefore(mkpill(n), act.firstChild); /* 白話排最左：白話｜總表｜影音 */
+    }else{
+      if(card.querySelector(".toc-bh"))continue;
+      var a2=document.createElement("div");a2.className="toc-actions";
+      a2.appendChild(mkpill(n));
+      var vid=card.querySelector(".toc-yt");if(vid){a2.appendChild(vid);}
+      card.appendChild(a2);
+    }
+  }
+}
+function openBH(n){var m=document.getElementById("bh4p"+n+"Modal");if(m){m.classList.add("open");}else{location.hash="#pin-"+n;}}
+document.addEventListener("click",function(e){
+  var b=(e.target&&e.target.closest)?e.target.closest(".toc-bh"):null;if(!b)return;
+  e.preventDefault();e.stopPropagation();openBH(b.getAttribute("data-bh"));
+},true);
+document.addEventListener("keydown",function(e){
+  if(e.key!=="Enter"&&e.key!==" ")return;
+  var b=(e.target&&e.target.closest)?e.target.closest(".toc-bh"):null;if(!b)return;
+  e.preventDefault();openBH(b.getAttribute("data-bh"));
+});
+build();
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",build);
+var c=0,iv=setInterval(function(){build();if(++c>24)clearInterval(iv);},250);
+})();</script>
+<!--WY-C4TOCBH:END-->
 </body></html>
