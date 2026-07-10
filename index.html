@@ -2283,4 +2283,53 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH4P1:END-->
+<!--WY-BH4P2:BEGIN-->
+<style id="wy-bh4p2-css">
+.bh4p2-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh4p2-fabbox.show{display:block;}
+.bh4p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh4p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh4p2-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh4p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh4p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh4p2-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh4p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh4p2-modal.open{display:flex;}
+.bh4p2-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh4p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh4p2-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh4p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh4p2-close:hover{background:#dde2e6;}
+.bh4p2-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh4p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh4p2-tbl th,.bh4p2-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh4p2-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh4p2-tbl thead th:nth-child(1){width:32%;}.bh4p2-tbl thead th:nth-child(2){width:41%;}.bh4p2-tbl thead th:nth-child(3){width:27%;}
+.bh4p2-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh4p2-guan{background:#eef2f5;color:#37505f;}
+.bh4p2-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh4p2-tbl tbody tr:nth-child(even) td.bh4p2-guan{background:#e8eef2;}
+.bh4p2-tbl b{color:#8b2500;}
+.bh4p2-guan b{color:#2f6b5a;}
+.bh4p2-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh4p2-note b{color:#8b2500;}
+@media(max-width:900px){.bh4p2-fabbox{right:14px;}.bh4p2-tbl{font-size:11px;}.bh4p2-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh4p2-fabbox" id="bh4p2Box"><button class="bh4p2-btn" id="bh4p2Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh4p2-ic">譯</span><span class="bh4p2-ls"><span class="bh4p2-l1">本品 · 原文·白話·中觀</span><span class="bh4p2-l2">白話翻譯表</span></span></button></div><div class="bh4p2-modal" id="bh4p2Modal" role="dialog" aria-modal="true"><div class="bh4p2-card"><button class="bh4p2-close" id="bh4p2Close" type="button" aria-label="關閉">×</button><h3>卷四 · 第2品 白話翻譯表（經首並列問答 · 大能容小 · 悲智雙運）</h3><p class="sub">《大智度論》卷四第2品·經首兩眾並列問答 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh4p2-tbl"><caption>經首並列·大能容小·大乘戰車偈 · 原文｜白話翻譯｜中觀概念（共11段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh4p2-src">問曰：何以故大乘經初，菩薩眾、聲聞眾兩說，聲聞經初獨說比丘眾，不說菩薩眾？</td><td>問：為什麼大乘經典開篇要把菩薩眾、聲聞眾兩種大眾都列出來說，而聲聞經典開篇卻只單獨說比丘眾，不說菩薩眾呢？</td><td class="bh4p2-guan"><b>經首並列之問</b>——由經典開篇「列誰、不列誰」的文獻現象發問，逗出佛乘與聲聞乘在格局、見地上的根本差異。</td></tr><tr><td class="bh4p2-src">答曰：欲辯二乘義故：佛乘及聲聞乘。聲聞乘陿小，佛乘廣大；聲聞乘自利自為，佛乘益一切。復次，聲聞乘多說眾生空，佛乘說眾生空、法空。</td><td>答：這是為了要辨明二乘的義理：佛乘與聲聞乘。聲聞乘格局狹小，佛乘格局廣大；聲聞乘只求自利自為，佛乘則利益一切眾生。又：聲聞乘大多只講眾生空，佛乘則兼說眾生空與法空。</td><td class="bh4p2-guan"><b>二乘義判·格局與見地雙軌</b>——以「陿小／廣大、自利／益一切」判格局動機之異，以「眾生空／眾生空兼法空」判見地深淺之異，二組判準構成經首並列兩眾的直接成因。</td></tr><tr><td class="bh4p2-src">問曰：如聲聞經初但說比丘眾，摩訶衍經初何以不但說菩薩眾？</td><td>問：既然聲聞經典開篇只單獨說比丘眾，那麼大乘經典開篇為什麼不乾脆只單獨說菩薩眾呢？</td><td class="bh4p2-guan"><b>再問·廣大是否等於排他</b>——反向追問「廣大」是否意味著「該獨佔、不容他」，逗出下文「大能容小」的包容法則。</td></tr><tr><td class="bh4p2-src">答曰：摩訶衍廣大，諸乘諸道皆入摩訶衍；聲聞乘陿小不受摩訶衍。</td><td>答：因為大乘廣大無邊，一切乘、一切道都能被含攝進大乘之中；聲聞乘則格局狹小，容納不下大乘。</td><td class="bh4p2-guan"><b>大能容小·非排他義</b>——真正的廣大不是排除小乘，而是涵容小乘；經首並列兩眾，正是大乘「廣大」的現場證明，而非不純粹的瑕疵。</td></tr><tr><td class="bh4p2-src">譬如恒河不受大海，以其陿小故；大海能受眾流，以其廣大故。摩訶衍法亦如是。</td><td>譬如恒河容納不下大海，因為恒河格局狹小的緣故；大海卻能容納眾多河流匯入，因為大海格局廣大的緣故。大乘之法也是同樣的道理。</td><td class="bh4p2-guan"><b>恒河海喻·方向不可逆</b>——小容不下大、大卻能容小，方向不可逆轉；聲聞經典裝不進菩薩眾，大乘經典卻能同時容納聲聞、菩薩二眾。</td></tr><tr><td class="bh4p2-src">「摩訶衍如海，小乘牛跡水；小故不受大，其喻亦如是。」</td><td>（偈頌說）「大乘就像浩瀚大海，小乘則像牛蹄印中的一窪積水；因為小，所以容納不下大，這個譬喻的道理也是一樣的。」</td><td class="bh4p2-guan"><b>牛跡水喻·執著即邊界</b>——把海喻推向極致：容量的大小取決於有沒有「執著的邊界」，牛跡水執著固定形狀故容量受限，大海空寂無邊故能受納眾流，正伏下文空性能容之理。</td></tr><tr><td class="bh4p2-src">「得此大乘人，能與一切樂，利益以實法，令得無上道！得此大乘人，慈悲一切故，頭目以布施，捨之如草木！得此大乘人，護持清淨戒，如犛牛愛尾，不惜身壽命！得此大乘人，能得無上忍，若有割截身，視之如斷草！得此大乘人，精進無厭惓，力行不休息，如抒大海者！得此大乘人，廣修無量定，神通聖道力，清淨得自在！得此大乘人，分別諸法相，無壞實智慧，是中已具得！」</td><td>（讚歎大乘的偈頌說）「證得這大乘之人，能給予一切眾生安樂，以真實之法利益眾生，使眾生證得無上佛道！證得這大乘之人，因慈悲一切眾生的緣故，甚至能布施自己的頭目，捨棄它們就像捨棄草木一樣！證得這大乘之人，護持清淨戒律，就像犛牛愛惜自己的尾巴一樣，絲毫不吝惜自己的身命！證得這大乘之人，能證得無上的忍辱，即使有人割截他的身體，他也視之如同斬斷雜草一般！證得這大乘之人，精進修行毫無厭倦疲憊，用盡全力永不休止，就像汲乾大海之水的人一樣！證得這大乘之人，廣修無量的禪定，具足神通與聖道之力，清淨自在！證得這大乘之人，能分別了知一切法的相狀，具足無有毀壞的真實智慧，這一切都已完全具足了！」</td><td class="bh4p2-guan"><b>讚摩訶衍偈·六度絕對奉獻</b>——七頌一一對應布施、持戒、忍辱、精進、禪定、智慧六度的極致實踐，顯大乘不僅是哲學概念，更是以身命踐行的修行實相。</td></tr><tr><td class="bh4p2-src">「驢馬駝象乘，雖同不相比；菩薩及聲聞，大小亦如是。」</td><td>（偈頌說）「驢、馬、駱駝、大象雖然都同樣稱為『乘』，承載的力量卻無從相比；菩薩乘與聲聞乘之間的差別，也是同樣的道理。」</td><td class="bh4p2-guan"><b>同名為乘·格局不可同日而語</b>——同名為「乘」卻承載力天差地別，喻菩薩乘與聲聞乘雖同稱為乘，格局實有大小懸殊。</td></tr><tr><td class="bh4p2-src">「大慈悲為軸，智慧為兩輪，精進為駛馬，戒定以為銜，忍辱心為鎧，總持為轡勒，摩訶衍人乘，能度於一切！」</td><td>（偈頌說）「以廣大慈悲作為車軸，以智慧作為兩個車輪，以精進作為駕車的馬匹，以戒律與禪定作為馬銜，以忍辱之心作為鎧甲，以總持作為韁繩馬勒，乘著這輛大乘的車子，就能度脫一切眾生！」</td><td class="bh4p2-guan"><b>大乘戰車喻·悲智雙運為核心</b>——以車軸（大慈悲）與雙輪（智慧）為缺一不可的核心，其餘精進、戒定、忍辱、總持環環相扣，構成大乘悲智雙運、廣度一切的完整修行系統。</td></tr><tr><td class="bh4p2-src">「不可思議智，無量悲心力，不入二法中，等觀一切法。」</td><td>（偈頌說）「以不可思議的智慧，以無量無邊的悲心之力，不落入生死、涅槃這兩種對立之法當中，平等看待一切諸法。」</td><td class="bh4p2-guan"><b>不入二法·中道駕駛心法</b>——不厭惡生死、不貪著涅槃，超越對立、等觀一切，正是龍樹八不中道在生死涅槃這一對範疇上的具體落實。</td></tr><tr><td class="bh4p2-src">「以有空義故，一切法得成」</td><td>（《中論》的根本論斷說）「正因為有『空』這層義理的緣故，一切法才得以成立。」</td><td class="bh4p2-guan"><b>空故能容·空義為一切法得成之根據</b>——空不是「什麼都沒有」，而是「沒有固定邊界」，因此能無礙地容受一切；此句正是「大海能容、牛跡水不能容」這一譬喻背後的中觀底層根據，亦即三個維度得以貫通的終極理由。</td></tr></tbody></table><p class="bh4p2-note">卷四第2品，論主由「大乘經初何以菩薩、聲聞兩眾並列」設問，先以「陿小／廣大、自利／益一切」及「眾生空／法空」判二乘義；次以恒河海喻、牛跡水偈說明大乘「大能容小」的包容法則；再以讚摩訶衍偈、大乘戰車偈、駕駛心法偈鋪陳悲智雙運的修行動力；終以《中論》「以有空義故，一切法得成」點出空故能容的中觀底層根據。白話忠於原意、不增不減。</p></div></div>
+<script id="wy-bh4p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh4p2Btn"),BOX=document.getElementById("bh4p2Box"),MODAL=document.getElementById("bh4p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function place(){var z=document.getElementById("c4p2Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh4p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH4P2:END-->
 </body></html>
